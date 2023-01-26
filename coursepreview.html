@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/css.css">
+<link rel="icon" type="image/x-icon" href="/images/favicon-.png">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<title>Raising Plus</title>
+<style>
+
+    body{margin-top:20px;
+      background-color: #F0F0F0 !important;
+    }
+    .btn.btn-outline-primary:hover, .bg-primary {
+        background-color: #0cb4ce !important;
+    }
+    html,
+    body{
+      width:100%;
+      overflow-x:hidden;
+    }
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+
+    .section-medium {
+        padding: 55px 0px;
+    }
+    .testimonial-four blockquote:hover::after, .section-arrow-primary-color.section-arrow--bottom-center:after {
+        border-right-color: #0cb4ce;
+    }
+    .section-arrow-primary-color.section-arrow--bottom-center:after {
+        background-color: #0cb4ce;
+        border-right-color: #0cb4ce;
+        border-bottom-color: #0cb4ce;
+    }
+    .section-arrow--bottom-center:after {
+        z-index: 1;
+        position: absolute;
+        left: 50%;
+        margin-left: -15px;
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        width: 30px;
+        height: 30px;
+        border-right: 1px solid #262626;
+        border-bottom: 1px solid #262626;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        background-color: #262626;
+    }
+    .text-white h1, .text-white h2, .text-white h3, .text-white h4, .text-white h5, .text-white h6 {
+        color: white !important;
+    }
+    .section-title {
+        font-size: 32px;
+        font-weight: 600;
+        margin-top: 0.45em;
+        margin-bottom: 0.35em;
+        color: #303133;
+        font-family: Poppins;
+        letter-spacing: -0.02em;
+    }
+    .section-sub-title {
+        font-size: 18px;
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-family: Poppins;
+    }
+    .section-arrow-primary-color.section-arrow--bottom-center:after {
+        border-bottom-color: #0cb4ce;
+    }
+    .section-arrow-primary-color.section-arrow--bottom-center:after{
+        background-color: #0cb4ce;
+    }
+    .special-heading.line span:before, .special-heading.line span:after, .footer.footer-minimal, .t-bordered {
+        border-top-color: #eaeaea;
+    }
+    .t-bordered {
+        border-top: 1px solid #eaeaea;
+    }
+    .section-primary {
+        padding: 75px 0px;
+    }
+    section {
+        position: relative;
+    }
+    a{
+        color: #000;
+    }
+    
+    
+    .testimonial-two {
+        padding: 20px;
+        border: 2px solid #0cb4ce;
+        border-radius: 2px;
+    }
+    
+    
+    .testimonial-two blockquote p:before {
+        font-family: 'Playfair Display';
+        font-size: 54px;
+        color: #0cb4ce;
+        font-weight: 900;
+        left: 10px;
+        color: #FFF;
+        content: "“";
+        font-style: normal;
+        line-height: 1;
+        position: absolute;
+        top: 5px;
+        font-size: 45px;
+    }
+    
+    .testimonial-two blockquote p:after {
+        font-family: 'Playfair Display';
+        font-size: 54px;
+        color: #0cb4ce;
+        content: "”";
+        font-size: 80px;
+        font-style: normal;
+        line-height: 1;
+        position: absolute;
+        bottom: -0.5em;
+        right: 10px;
+        font-weight: 900;
+        transform: scaleY(-1);
+        font-size: 45px;
+        bottom: -5px;
+    }
+    
+    
+    .testimonial-two blockquote {
+        padding: 15px 15px 15px 48px;
+        position: relative;
+    }
+    
+    .testimonial-two blockquote p:before,
+    .testimonial-two blockquote p:after {
+        color: #0cb4ce;
+        font-weight: 900;
+    }
+    
+    .testimonial-two blockquote p {
+        font-size: inherit;
+        font-weight: inherit;
+    }
+    
+    .testimonial-two .testimonial-author p {
+        color: #999;
+        margin: 0 0 0 25px;
+        text-align: left;
+    }
+    
+    .testimonial-two .testimonial-author strong {
+        display: block;
+        padding-top: 10px;
+        margin-bottom: -2px;
+        font-weight: 500;
+        font-size: 14px;
+        color: #444;
+    }
+    
+    .testimonial-two .testimonial-author span {
+        color: #666;
+        display: block;
+        font-size: 12px;
+    }
+    
+    .testimonial-two .testimonial-author .testimonial-author-thumbnail {
+        float: left;
+        margin-right: 15px;
+        width: auto;
+    }
+    
+    .testimonial-two .testimonial-author img {
+        max-width: 55px;
+    }
+    
+    .testimonial-two .testimonial-author {
+        margin-left: 12px;
+        margin-bottom: 15px;
+    }
+    
+    
+    .testimonial-two .owl-theme .owl-nav.disabled + .owl-dots {
+        margin-top: 0px;
+    }
+    
+    .testimonial-two .owl-theme .owl-dots {
+        text-align: left;
+        margin-left: 50px;
+    }
+    
+    .testimonial-two .owl-carousel .owl-dots .owl-dot.active span, 
+    .testimonial-two .owl-carousel .owl-dots .owl-dot:hover span {
+           border-color: #0cb4ce;
+    }
+    
+    .testimonial-two .owl-carousel .owl-dots .owl-dot.active span:before, 
+    .testimonial-two .owl-carousel .owl-dots .owl-dot:hover span:before {
+        background-color: #0cb4ce;
+    }
+    
+    
+    
+    
+    .testimonial-three .testimonial-image {
+        float: left;
+        margin: 0 20px 0 0;
+        width: 80px;
+        height: 80px;
+        border-radius: 100px;
+        overflow: hidden;
+    }
+    
+    .testimonial-three .testimonial-content {
+        overflow: hidden;
+    }
+    
+    .testimonial-three .testimonial-meta {
+        position: relative;
+        overflow: hidden;
+        margin-left: 100px;
+    }
+    
+    
+    .testimonial-three .testimonial-name {
+        display: block;
+    }
+    
+    
+    .testimonial-three .testimonial-three-col {
+        padding-bottom: 35px;
+    }
+    
+    .testimonial-three .testimonial-three-col {
+        border-right-style: dashed;
+        border-right-width: 1px;
+        border-bottom-style: dashed;
+        border-bottom-width: 1px;
+        border-right-color: #ddd;
+        border-bottom-color: #ddd;
+        padding: 25px;
+    }
+    
+    .testimonial-three .testimonial-three-col:hover {
+       background-color:#f7f7f7;
+    }
+    
+    .alternate-color .testimonial-three .testimonial-three-col:hover {
+       background-color:white;
+    }
+    
+    .testimonial-three.testimonial-three--col-two .testimonial-three-col:nth-child(2n) {
+        border-right: none;
+    }
+    
+    .testimonial-three.testimonial-three--col-two .testimonial-three-col:nth-last-child(-n+2),
+    .testimonial-three.testimonial-three--col-two .testimonial-three-col:last-child {
+        border-bottom: none;
+    }
+    
+    .testimonial-three.testimonial-three--col-three .testimonial-three-col:nth-child(3n) {
+        border-right: none;
+    }
+    
+    .testimonial-three.testimonial-three--col-three .testimonial-three-col:nth-last-child(-n+3),
+    .testimonial-three.testimonial-three--col-three .testimonial-three-col:nth-last-child(-n+2),
+    .testimonial-three.testimonial-three--col-three .testimonial-three-col:last-child {
+        border-bottom: none;
+    }
+    
+    
+    
+    
+    
+    
+    
+    .testimonial-four .testimonial-author .testimonial-author-thumbnail {
+       float: left;
+       margin-right: 15px;
+       width: auto;
+    }
+    
+    .testimonial-four .testimonial-author img {
+       max-width: 55px;
+    }
+    
+    .testimonial-four .testimonial-author strong {
+       display: block;
+       padding-top: 10px;
+       margin-bottom: -2px;
+       font-weight: 500;
+       font-size: 14px;
+       color: #444;
+    }
+    
+    .testimonial-four .testimonial-author span {
+       color: #666;
+       display: block;
+       font-size: 12px;
+    }
+    
+    .testimonial-four blockquote {
+       padding: 30px;
+       width: 100%;
+       border-radius: 4px;
+       position: relative;
+       margin-bottom: 20px;
+       padding-bottom: 25px;
+       border: 2px solid #eaeaea;
+    }
+    
+    .testimonial-four blockquote::after {
+       content: "";
+       border-right: 2px solid #eaeaea;
+       border-bottom: 2px solid #eaeaea;
+       -webkit-transform: rotate(55deg);
+       -moz-transform: rotate(55deg);
+       -ms-transform: rotate(55deg);
+       -o-transform: rotate(55deg);
+       transform: rotate(55deg);
+       position: absolute;
+       left: 55px;
+       bottom: -12px;
+       width: 15px;
+       height: 21px;
+       overflow: hidden;
+       background: white;
+    }
+    
+    .testimonial-four .owl-theme .owl-nav.disabled + .owl-dots {
+       position: absolute;
+       float: right;
+       text-align: right;
+       right: 3px;
+       bottom: 40px;
+    }
+    
+    .testimonial-four .testimonial-author {
+       position: relative;
+       overflow: hidden;
+    }
+    
+    .testimonial-four blockquote:hover::after {
+       border-right: 2px solid #0cb4ce;
+       border-bottom: 2px solid #0cb4ce;
+    }
+    
+    .testimonial-four blockquote:hover {
+       border: 2px solid #0cb4ce;
+    }
+    
+    
+    
+    
+    
+    .testimonial-five blockquote p {
+        font-weight: 400;
+        font-size: 14.58px;
+        line-height: 1.6;
+        margin-bottom:0;
+    }
+    
+    .testimonial-five .testimonial-author .testimonial-author-thumbnail {
+       float: left;
+       margin-right: 15px;
+       width: auto;
+    }
+    
+    .testimonial-five .testimonial-author img {
+       max-width: 55px;
+    }
+    
+    .testimonial-five .testimonial-author strong {
+       display: block;
+       padding-top: 10px;
+       margin-bottom: -2px;
+       font-weight: 600;
+       font-size: 13px; 
+    }
+    
+    .testimonial-five .testimonial-author span {
+       color: #666;
+       display: block;
+       font-size: 12px;
+    }
+    
+    .testimonial-five blockquote {
+       padding: 32px 41px 37px;
+       width: 100%;
+       border-radius: 4px;
+       position: relative;
+       margin-bottom: 30px; 
+       border: 0px solid #eaeaea;
+       background-color: #f7f7f7;
+    }
+    
+    .testimonial-five blockquote::after {
+       content: "";
+       border-right: 0px solid #eaeaea;
+       border-bottom: 0px solid #eaeaea;
+       -webkit-transform: rotate(55deg);
+       -moz-transform: rotate(55deg);
+       -ms-transform: rotate(55deg);
+       -o-transform: rotate(55deg);
+       transform: rotate(55deg);
+       position: absolute;
+       left: 55px;
+       bottom: -10px;
+       width: 15px;
+       height: 21px;
+       overflow: hidden;
+       background: #f7f7f7;
+    }
+    
+    .testimonial-five.testimonial-light blockquote{
+       background-color:white;
+    }
+    .testimonial-five.testimonial-light blockquote::after {
+       background: white;
+    }
+    
+    
+    .testimonial-five .owl-theme .owl-nav.disabled + .owl-dots {
+       position: absolute;
+       float: right;
+       text-align: right;
+       right: 3px;
+       bottom: 40px;
+    }
+    
+    .testimonial-five .testimonial-author {
+       position: relative;
+       overflow: hidden;
+    }
+    
+    .testimonial-five blockquote:before {
+        content: "“";
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-size: 170px;
+        color: rgba(189, 189, 189, 0.2);
+        position: absolute;
+        top: 10px;
+        left: 20px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .card {
+        -moz-box-direction: normal;
+        -moz-box-orient: vertical;
+        background-color: #fff;
+        border-radius: 0.25rem;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-bottom:1px;
+        border:none;
+    }
+    .card-header:first-child {
+        border-radius: 0;
+    }
+    .card-header {
+        background-color: #f7f7f9;
+        margin-bottom: 0;
+        padding: 20px 1.25rem;
+        border:none;
+        
+    }
+    .card-header a i{
+        float:left;
+        font-size:25px;
+        padding:5px 0;
+        margin:0 25px 0 0px;
+        color:#195C9D;
+    }
+    .card-header i{
+        float:right;        
+        font-size:30px;
+        width:1%;
+        margin-top:8px;
+        margin-right:10px;
+    }
+    .card-header a{
+        width:97%;
+        float:left;
+        color:#565656;
+    }
+    .card-header p{
+        margin:0;
+    }
+    
+    .card-header h3{
+        margin:0 0 0px;
+        font-size:20px;
+        font-family: 'Slabo 27px', serif;
+        font-weight:bold;
+        color:#3fc199;
+    }
+    .card-block {
+        -moz-box-flex: 1;
+        flex: 1 1 auto;
+        padding: 20px;
+        color:#232323;
+        box-shadow:inset 0px 4px 5px rgba(0,0,0,0.1);
+        border-top:1px soild #000;
+        border-radius:0;
+    }
+.trusted{
+    width: 80px;
+    height: 80px;
+}
+
+
+
+</style>
+</head> 
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <a class="navbar-brand" href="/index.html">
+      <img class="logo" src="./images/rp3.png" width="90" height="60" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./teach.html">Teach</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/courses.html">Courses</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Cartegory
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item"href="./courses/Science.html">Science & Mathematics</a>
+            <a class="dropdown-item" href="./courses/tech.html">Technology</a>
+            <a class="dropdown-item" href="./courses/accounting.html">Accounting</a>
+            <a class="dropdown-item" href="./courses/management.html">Management/Leadership</a>
+            <a class="dropdown-item" href="./courses/health.html">Health and Wellness</a>
+            <a class="dropdown-item" href="./courses/artisan.html">Artisan</a>
+            <a class="dropdown-item" href="./courses/electronics.html">Electronics</a>
+            <a class="dropdown-item" href="./courses/agric.html">Agriculture</a>
+            <a class="dropdown-item" href="./courses/engineering.html">Engineering</a>
+          </div>
+        </li>
+      </ul>
+      <div class="search">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search a course">
+        <div class="input-group-append">
+          <button class="btn btn-secondary" type="button">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="up">
+      <form class="form-inline my-2 my-lg-0">
+        <div class="register" style="padding-left:10px;"><a class="nav-login" href="/loginas.html">Login
+        </a></div>
+        <div id="register1" class="register" style="padding-left:10px"><a class="nav-signup" href="/signupas.html">Sign up</a>
+        </div>
+      <div class="user-section">
+          <ul class="nav pull-right">
+              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i id="user" class="fa fa-user-circle-o"></i><b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a id="log"  href="/login.html"><i class="fas fa-user"></i> Profile</a></li>
+                  <li><a id="log" href="/loginas.html"><i class="fa fa-sign-out"></i>Logout</a></li>
+                  </ul>
+              </li>
+          </ul>
+        </div>
+        <button type="button" class="icon-button" data-toggle="modal" data-target="#cart">
+          <span class="fa fa-shopping-cart" style="font-size: 33px;"></span>
+          <span class="icon-button__badge"><span class="total-count"></span></span>
+        </button>
+  </form>
+</div>
+</div>
+  </nav>
+
+
+
+
+
+
+  <div class="container-fluid" style="padding-top: 110px; padding-bottom: 40px;background:black">
+    <div class="container" id="kk">
+<h2 class="h111" style="color: #ffff;font-weight: 700;">100 Days of Code: The Complete Python Pro<br> Bootcamp for 2023</h2>
+<p class="p111" style="color: #ffff;font-size:16px;font-weight:500;padding-top:10px">Master Python by building 100 projects in 100 days. Learn data science,<br> automation, build websites, games and apps!</p>
+<div class="p11"><a class="link" href="#">Best seller</a> <span style="font-weight: 600;color:white;padding-left:3px">4.7</span>
+<span  class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star  checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="p11" style="color: white;font-size:14px;font-weight:500"><span  class="p11" ><small class="none1">(12,213 ratings)  </small>705,498 students</span></span></div>
+<div><p class="p11" style="color: #ffff;font-weight:400px;padding-top: 5px">Created by: Nana Kwame</p></div>
+<div> <span><i style="color:#ffff;" class="fa fa-clock-o fa-1x"></i><small style="color:#ffff;padding-left: 14px">Last updated 11/2022</small>
+    <i style="color: #ffff;padding-left: 24px !important" class="fa fa-globe"><small style="padding-left: 15px;font-size: 14px !important">English
+    </small></i></span></div>
+</div></div>
+</div>
+
+
+
+
+
+<div style="padding-top:50px">
+    <div class="card htl" style="width: 62rem; margin:0px auto;">
+        <h3 class="ee" style="padding: 15px 0px 0px 23px;" >What you'll learn</h3>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm-3 col-md-6">
+                    <ul>
+                        <li>You will master the Python programming language by building 100 unique projects over 100 days.</li>
+                        <li>You will be able to program in Python professionally</li>
+                        <li>Create a portfolio of 100 Python projects to apply for developer jobs</li>
+                        <li>Be able to use Python for data science and machine learning</li>
+                        <li>Build GUIs and Desktop applications with Python</li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-6">
+                    <ul>
+                        <li>You will learn automation, game, app and web development, data science and machine learning all using Python.</li>
+                        <li>You will learn Selenium, Beautiful Soup, Request, Flask, Pandas, NumPy, Scikit Learn, Plotly, and Matplotlib.</li>
+                        <li>Be able to build fully fledged websites and web apps with Python</li>
+                        <li>Build games like Blackjack, Pong and Snake using Python</li>
+                    </ul>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div style="padding-top:50px">
+        <div id="lk" class="card ht" style="width: 62rem; margin:0px auto;">
+            <div class="card-body">
+            <h3 class="hha" style="font-size: 19px; font-weight: 700; padding-top: 10px">Top companies offer this course to their employees</h3>
+            <p id="c" style="font-size: 13px; padding-top: 5px; padding-bottom: 30px">This course was selected for our collection of top-rated courses trusted by businesses worldwide. Learn more</p>
+            <div class="row">
+                      <div class="col-4 col-sm-4	.col-md-4	col-lg-2	col-xl-2">
+                      <img class="trusted" src="/images/2.png">
+                    </div>
+                  <div class="col-4	col-sm-4	.col-md-4	col-lg-2	col-xl-2">
+                    <img class="trusted" src="/images/1.png">
+                  </div>
+                  <div class="col-4	col-sm-4	.col-md-4	col-lg-2	col-xl-2">
+                    <img class="trusted" src="/images/3.png">
+                  </div>
+                  <div class="col-4	col-sm-4	.col-md-4	col-lg-2	col-xl-2">
+                    <img class="trusted" src="/images/4.png">
+                  </div>
+                  <div class="col-4	col-sm-4	.col-md-4	col-lg-2	col-xl-2">
+                    <img class="trusted" src="/images/logo.png">
+                  </div>
+                  <div class="col-4	col-sm-4	.col-md-4	col-lg-2	col-xl-2">
+                    <img class="trusted" src="./images/4.png">
+                  </div>
+                </div>
+        </div>
+          </div>
+        </div>
+
+        
+
+
+
+
+        <div>
+            <section>
+                <div id="ser" class="container" style="padding-top: 80px">
+                    <div class="row">
+                      <div class="nbv">
+            <h2 class="cen1" style="font-size: 24px">Course content</h2>
+            <p id="xda" class="cen1" style="font-size: 14px; font-weight: 600; padding-bottom: 10px">101 sections • 676 lectures • 64h 3m total length</p>
+          </div>
+          
+          <div class="col-md-8 offset-md-2">
+                            <div class="bd-example" data-example-id="">
+            <div id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="card">
+                <div class="card-header" role="tab" id="headingOne">
+                  <div class="mb-0">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                      <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        <h3 class="course-titles">Day 1 - Beginner - Working with Python String Formatting <small class="fat">19 lectures | 1hr 30mins</small></h3>
+                    </a>
+                   
+                  </div>
+                </div>
+            
+                <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="">
+                  <div class="card-block">
+                   
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="./course_video.html">What you are going to get from this course</a></small><small style="float: right; font-size:12px">07:12</small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="https://www.africau.edu/images/default/sample.pdf">Start here</a></small><small style="float: right; font-size:12px">09:42</small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="https://www.africau.edu/images/default/sample.pdf">Downloadable course materials</a></small><small style="float: right; font-size:12px">10:21</small></span></p>
+                    <p><span><i class="fa fa-question-circle"></i></i><small style="padding-left: 10px;"><a href="#">Skills Assessment</a></small><small style="float: right; font-size:12px"></small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Day 1 Goals: what we will make by the end of the day</a></small><small style="float: right; font-size:12px">01:12</small></span></p>
+                    <p><span><i class="fa fa-file-pdf-o"></i><small style="padding-left: 10px;"><a href="#">FAQ: Can I Use PyCharm/VSCode/ Another Local Code Editor?</a></small><small style="float: right; font-size:12px"></small></span></p>
+                    <p><span><i class="fa fa-question-circle"></i></i><small style="padding-left: 10px;"><a href="#">Skills Assessment</a></small><small style="float: right; font-size:12px">07:12</small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Printing to the Console in Python </a></small><small style="float: right; font-size:12px">09:54</small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">What you are going to get from this course</a></small><small style="float: right; font-size:12px">08:16</small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Start here</a></small><small style="float: right; font-size:12px">01:33</small></span></p>
+                    <p><span><i class="fa fa-file-pdf-o"></i><small style="padding-left: 10px;"><a href="#">Join Our Class on Coding Rooms</a></small><small style="float: right; font-size:12px"></small></span></p>
+                    <p><span><i class="fa fa-file-pdf-o"></i><small style="padding-left: 10px;"><a href="#">[Interactive Coding Exercise] Debugging Practice</a></small><small style="float: right; font-size:12px"></small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Congratulations! Well done!</a></small><small style="float: right; font-size:12px">11:54</small></span></p>
+            
+                </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" role="tab" id="headingTwo">
+                  <div class="mb-0">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        <h3 class="course-titles">Day 2 - Beginner - Python Classes and Objects <small class="fat">09 lectures | 8 videos</small></h3>
+                    </a>
+                  </div>
+                </div>
+                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
+                  <div class="card-block">
+            
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">What you are going to get from this course</a></small><small style="float: right; font-size:12px">07:12</small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Start here</a></small><small style="float: right; font-size:12px">09:42</small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Downloadable course materials</a></small><small style="float: right; font-size:12px">10:21</small></span></p>
+                    <p><span><i class="fa fa-question-circle"></i></i><small style="padding-left: 10px;"><a href="#">Skills Assessment</a></small><small style="float: right; font-size:12px"></small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Day 1 Goals: what we will make by the end of the day</a></small><small style="float: right; font-size:12px">01:12</small></span></p>
+                    <p><span><i class="fa fa-file-pdf-o"></i><small style="padding-left: 10px;"><a href="#">FAQ: Can I Use PyCharm/VSCode/ Another Local Code Editor?</a></small><small style="float: right; font-size:12px"></small></span></p>
+                    <p><span><i class="fa fa-question-circle"></i></i><small style="padding-left: 10px;"><a href="#">Skills Assessment</a></small><small style="float: right; font-size:12px">07:12</small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Printing to the Console in Python </a></small><small style="float: right; font-size:12px">09:54</small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">What you are going to get from this course</a></small><small style="float: right; font-size:12px">08:16</small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Start here</a></small><small style="float: right; font-size:12px">01:33</small></span></p>
+                    <p><span><i class="fa fa-file-pdf-o"></i><small style="padding-left: 10px;"><a href="#">Join Our Class on Coding Rooms</a></small><small style="float: right; font-size:12px"></small></span></p>
+                    <p><span><i class="fa fa-file-pdf-o"></i><small style="padding-left: 10px;"><a href="#">[Interactive Coding Exercise] Debugging Practice</a></small><small style="float: right; font-size:12px"></small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Congratulations! Well done!</a></small><small style="float: right; font-size:12px">11:54</small></span></p>
+            
+                </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" role="tab" id="headingThree">
+                  <div class="mb-0">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        <h3 class="course-titles">Day 3 - Beginner - Working with Python While Loops<small class="fat">11 lectures | 6 videos</small></h3>
+                    </a>
+                  </div>
+                </div>
+                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
+                  <div class="card-block">
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">What you are going to get from this course</a></small><small style="float: right; font-size:12px">07:12</small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Start here</a></small><small style="float: right; font-size:12px">09:42</small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Downloadable course materials</a></small><small style="float: right; font-size:12px">10:21</small></span></p>
+                    <p><span><i class="fa fa-question-circle"></i></i><small style="padding-left: 10px;"><a href="#">Skills Assessment</a></small><small style="float: right; font-size:12px"></small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Day 1 Goals: what we will make by the end of the day</a></small><small style="float: right; font-size:12px">01:12</small></span></p>
+                    <p><span><i class="fa fa-file-pdf-o"></i><small style="padding-left: 10px;"><a href="#">FAQ: Can I Use PyCharm/VSCode/ Another Local Code Editor?</a></small><small style="float: right; font-size:12px"></small></span></p>
+                    <p><span><i class="fa fa-question-circle"></i></i><small style="padding-left: 10px;"><a href="#">Skills Assessment</a></small><small style="float: right; font-size:12px">07:12</small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Printing to the Console in Python </a></small><small style="float: right; font-size:12px">09:54</small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">What you are going to get from this course</a></small><small style="float: right; font-size:12px">08:16</small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Start here</a></small><small style="float: right; font-size:12px">01:33</small></span></p>
+                    <p><span><i class="fa fa-file-pdf-o"></i><small style="padding-left: 10px;"><a href="#">Join Our Class on Coding Rooms</a></small><small style="float: right; font-size:12px"></small></span></p>
+                    <p><span><i class="fa fa-file-pdf-o"></i><small style="padding-left: 10px;"><a href="#">[Interactive Coding Exercise] Debugging Practice</a></small><small style="float: right; font-size:12px"></small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Congratulations! Well done!</a></small><small style="float: right; font-size:12px">11:54</small></span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" role="tab" id="headingOne">
+                  <div class="mb-0">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        <h3 class="course-titles">Day 4 - Beginner - Python Tkinter UI development <small class="fat">12 lectures | 2 videos</small></h3>
+                    </a>
+                  </div>
+                </div>
+            
+                <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="">
+                  <div class="card-block">
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">What you are going to get from this course</a></small><small style="float: right; font-size:12px">07:12</small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Start here</a></small><small style="float: right; font-size:12px">09:42</small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Downloadable course materials</a></small><small style="float: right; font-size:12px">10:21</small></span></p>
+                    <p><span><i class="fa fa-question-circle"></i></i><small style="padding-left: 10px;"><a href="#">Skills Assessment</a></small><small style="float: right; font-size:12px"></small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Day 1 Goals: what we will make by the end of the day</a></small><small style="float: right; font-size:12px">01:12</small></span></p>
+                    <p><span><i class="fa fa-file-pdf-o"></i><small style="padding-left: 10px;"><a href="#">FAQ: Can I Use PyCharm/VSCode/ Another Local Code Editor?</a></small><small style="float: right; font-size:12px"></small></span></p>
+                    <p><span><i class="fa fa-question-circle"></i></i><small style="padding-left: 10px;"><a href="#">Skills Assessment</a></small><small style="float: right; font-size:12px">07:12</small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Printing to the Console in Python </a></small><small style="float: right; font-size:12px">09:54</small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">What you are going to get from this course</a></small><small style="float: right; font-size:12px">08:16</small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Start here</a></small><small style="float: right; font-size:12px">01:33</small></span></p>
+                    <p><span><i class="fa fa-file-pdf-o"></i><small style="padding-left: 10px;"><a href="#">Join Our Class on Coding Rooms</a></small><small style="float: right; font-size:12px"></small></span></p>
+                    <p><span><i class="fa fa-file-pdf-o"></i><small style="padding-left: 10px;"><a href="#">[Interactive Coding Exercise] Debugging Practice</a></small><small style="float: right; font-size:12px"></small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Congratulations! Well done!</a></small><small style="float: right; font-size:12px">11:54</small></span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" role="tab" id="headingTwo">
+                  <div class="mb-0">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        <h3 class="course-titles">Day 5 - Beginner - OOP with constructors <small class="fat">11 lectures | 5 videos</small></h3>
+                    </a>
+                  </div>
+                </div>
+                <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
+                  <div class="card-block">
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">What you are going to get from this course</a></small><small style="float: right; font-size:12px">07:12</small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Start here</a></small><small style="float: right; font-size:12px">09:42</small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Downloadable course materials</a></small><small style="float: right; font-size:12px">10:21</small></span></p>
+                    <p><span><i class="fa fa-question-circle"></i></i><small style="padding-left: 10px;"><a href="#">Skills Assessment</a></small><small style="float: right; font-size:12px"></small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Day 1 Goals: what we will make by the end of the day</a></small><small style="float: right; font-size:12px">01:12</small></span></p>
+                    <p><span><i class="fa fa-file-pdf-o"></i><small style="padding-left: 10px;"><a href="#">FAQ: Can I Use PyCharm/VSCode/ Another Local Code Editor?</a></small><small style="float: right; font-size:12px"></small></span></p>
+                    <p><span><i class="fa fa-question-circle"></i></i><small style="padding-left: 10px;"><a href="#">Skills Assessment</a></small><small style="float: right; font-size:12px">07:12</small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Printing to the Console in Python </a></small><small style="float: right; font-size:12px">09:54</small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">What you are going to get from this course</a></small><small style="float: right; font-size:12px">08:16</small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Start here</a></small><small style="float: right; font-size:12px">01:33</small></span></p>
+                    <p><span><i class="fa fa-file-pdf-o"></i><small style="padding-left: 10px;"><a href="#">Join Our Class on Coding Rooms</a></small><small style="float: right; font-size:12px"></small></span></p>
+                    <p><span><i class="fa fa-file-pdf-o"></i><small style="padding-left: 10px;"><a href="#">[Interactive Coding Exercise] Debugging Practice</a></small><small style="float: right; font-size:12px"></small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Congratulations! Well done!</a></small><small style="float: right; font-size:12px">11:54</small></span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" role="tab" id="headingThree">
+                  <div class="mb-0">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        <h3 class="course-titles">Day 6 - Beginner - python managing data <small class="fat">17 lectures | 6 videos</small></h3>
+                    </a>
+                  
+                  </div>
+                </div>
+                <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
+                  <div class="card-block">
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">What you are going to get from this course</a></small><small style="float: right; font-size:12px">07:12</small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Start here</a></small><small style="float: right; font-size:12px">09:42</small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Downloadable course materials</a></small><small style="float: right; font-size:12px">10:21</small></span></p>
+                    <p><span><i class="fa fa-question-circle"></i></i><small style="padding-left: 10px;"><a href="#">Skills Assessment</a></small><small style="float: right; font-size:12px"></small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Day 1 Goals: what we will make by the end of the day</a></small><small style="float: right; font-size:12px">01:12</small></span></p>
+                    <p><span><i class="fa fa-file-pdf-o"></i><small style="padding-left: 10px;"><a href="#">FAQ: Can I Use PyCharm/VSCode/ Another Local Code Editor?</a></small><small style="float: right; font-size:12px"></small></span></p>
+                    <p><span><i class="fa fa-question-circle"></i></i><small style="padding-left: 10px;"><a href="#">Skills Assessment</a></small><small style="float: right; font-size:12px">07:12</small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Printing to the Console in Python </a></small><small style="float: right; font-size:12px">09:54</small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">What you are going to get from this course</a></small><small style="float: right; font-size:12px">08:16</small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Start here</a></small><small style="float: right; font-size:12px">01:33</small></span></p>
+                    <p><span><i class="fa fa-file-pdf-o"></i><small style="padding-left: 10px;"><a href="#">Join Our Class on Coding Rooms</a></small><small style="float: right; font-size:12px"></small></span></p>
+                    <p><span><i class="fa fa-file-pdf-o"></i><small style="padding-left: 10px;"><a href="#">[Interactive Coding Exercise] Debugging Practice</a></small><small style="float: right; font-size:12px"></small></span></p>
+                    <p><span><i class="fa fa-play-circle"></i><small style="padding-left: 10px;"><a href="#">Congratulations! Well done!</a></small><small style="float: right; font-size:12px">11:54</small></span></p>
+                  </div>
+                </div>
+              </div>
+            </div></div>
+                        </div>
+                    </div>
+            </div>
+            </div>
+            
+
+            
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+            <div class="container ht" style="width: 62rem; margin:0px auto; padding-top: 70px" >
+                <h3>Requirements</h3>
+             <div class="jdd">
+                <ul>
+                    <li style="padding-left: 10px;">No programming experience needed - I'll teach you everything you need to know</li>
+                    <li style="padding-left: 10px;">A Mac or PC computer with access to the internet</li>
+                    <li style="padding-left: 10px;">No paid software required - I'll teach you how to use PyCharm, Jupyter Notebooks and Google Colab</li>
+                    <li style="padding-left: 10px;">I'll walk you through, step-by-step how to get all the software installed and set up</li>
+                </ul>
+                    </div>   </div>
+                </div>
+                
+                
+                
+                <div id="kip" class="container ht" style="width: 62rem; margin:0px auto">Welcome to the 100 Days of Code - <span id="bold">The Complete Python Pro Bootcamp,</span> the only course you need to learn to code with Python. With over<span id="bold"> 500,000 5 STAR reviews and a 4.8 average</span> 500,000 5 STAR reviews and a 4.8 average, my courses are some of the HIGHEST RATED courses in the history of Udemy!  
+                    100 days, 1 hour per day, learn to build 1 project per day, this is how you <span id="bold"> master Python.</span>
+                    At<span id="bold"> 60+ hours</span> , this Python course is without a doubt the most <span id="bold">comprehensive Python course</span> comprehensive Python course available anywhere online. Even if you have zero programming experience, this course will take you from beginner to professional. 
+                    Here's why:<span id="dots">...</span><span id="more"><ul>
+                        <li style="padding: 3px;"> The course is taught by the lead instructor at the App Brewery, London's <span id="bold"> best in-person programming Bootcamp.</span></li>
+                        <li style="padding: 3px;">The course has been updated to be<span id="bold"> 2023 ready</span> 2023 ready and you'll be learning the latest tools and technologies used at large companies such as Apple, Google and Netflix.</li>
+                        <li style="padding: 3px;"> This course doesn't cut any corners, there are<span id="bold"> beautiful animated explanation videos and tens of real-world projects</span>  which you will get to build. e.g. Tinder auto swiper, Snake game, Blog Website, LinkedIn Auto Submit Job Application</li>
+                        <li style="padding: 3px;"> The curriculum was developed over a period of 2 years, with <span id="bold">comprehensive student</span> comprehensive student testing and feedback.</li>
+                        </ul> We've taught over <span id="bold">600,000 </span>students how to code and many have gone on to change their lives by becoming professional developers or starting their own tech startup.
+                        You'll save yourself over <span id="bold">$12,000</span> by enrolling, and still get access to the same teaching materials and learn from the same instructor and curriculum as our in-person programming<span id="bold"> Bootcamp.</span>
+                        The course is constantly updated with new content, with new projects and modules determined by students - that's you!
+                        We'll take you step-by-step through engaging video tutorials and teach you everything you need to know to succeed as a Python developer.
+                        The course includes over 65 hours of<span id="bold"> HD video tutorials</span> and builds your programming knowledge while making real-world Python projects.
+                        <h5 style="padding-top: 10px;">Throughout this comprehensive course, we cover a massive amount of tools and<span id="bold"></span> technologies, including:</h5>
+                    <ul>
+                    <li style="padding: 3px;"> Python 3 - the latest version of Python</li>
+                    <li style="padding: 3px;">   PyCharm, Jupyter Notebook, Google Colab</li>
+                    <li style="padding: 3px;"> Python Scripting and Automation</li>
+                    <li style="padding: 3px;"> Python Game Development</li>
+                    <li style="padding: 3px;"> Web Scraping</li>
+                    <li style="padding: 3px;"> Beautiful Soup</li>
+                    <li style="padding: 3px;">Selenium Web Driver</li>
+                    <li style="padding: 3px;">Request</li>
+                    <li style="padding: 3px;">WTForms</li>
+                    <li style="padding: 3px;"> Data Science</li>
+                    <li style="padding: 3px;"> Pandas</li>
+                    <li style="padding: 3px;">  NumPy</li>
+                    <li style="padding: 3px;"> Matplotlib</li>
+                    <li style="padding: 3px;"> Plotly</li>
+                    <li style="padding: 3px;">  Scikit learn</li>
+                    <li style="padding: 3px;"> Seaborn</li>
+                    <li style="padding: 3px;"> Turtle</li>
+                    <li style="padding: 3px;"> Python GUI Desktop App Development</li>
+                    <li style="padding: 3px;">Tkinter</li>
+                    <li style="padding: 3px;">Front-End Web Development</li>
+                   </ul>
+                    </span>
+                <a style="color: rgb(109, 19, 255); font-weight:700; font-size: 15px" onclick="myFunction()" id="myBtn">Read more</a>
+                </div>
+                
+
+                
+
+
+                <div style="padding:80px 0px 30px 0px">
+                    <div id="ppp" class="card ht" style="width: 62rem; margin:0px auto">
+                        <h3 style="padding:20px 0px 0px 20px;">Featured Review</h3>
+                        <div style="padding-left: 40px;" class="card-body">
+                                <div class="image-wrap">
+                                    <img class="rounded-circle circle" alt="avatar1" src="https://mdbcdn.b-cdn.net/img/new/avatars/9.webp" />
+                                   <div style="padding-top: 10px;">
+                                    <span class="none1" style="padding: 20px 0px 0px 17px !important;font-weight: 700;  font-size: 15px">David K.</span><br>
+                                    <span class="none1"  style="padding-left:  20px!important;">39 courses</span><br>
+                                    <span class="none1" style="padding-left:  20px !important;">29 reviews</span>
+                                </div>
+                                </div>
+                                <div  style="padding-top: 2px; padding-left: 100px">
+                                    <span id="none1" style="padding-left: 14px"  class="fa fa-star checked "></span>
+                                    <span id="none1" class="fa fa-star checked"></span>
+                                    <span id="none1" class="fa fa-star checked"></span>
+                                    <span id="none1"  class="fa fa-star" checked></span>
+                                    <span id="none1" class="fa fa-star"></span></div><br>
+                    
+                    <div><p class="teachers" >Angela is a great teacher and I have taken some other courses of hers. This one seems to be of the same great quality. 
+                        If you want a simple code-along, this is not for you. Angela will Challenge you to actually use what she teaches you many times 
+                        along the way. You WILL know how to program Python when you finish this course!</p></div>
+                        <p>Was this review helpful?</p>
+                        <span><i class="fa fa-thumbs-up" style="padding-right: 10px !important; font-size:40px; color:rgb(77, 77, 77)"></i> </span>
+                        <span><i class="fa fa-thumbs-down" style="font-size:40px;color:rgb(77, 77, 77); -webkit-transform: scaleX(-1);
+                            transform: scaleX(-1); "></i> </span><span style="padding-left: 15px;"> <a href="#">Report</span></a>
+                        </div>
+                      </div>
+                    </div>  
+                    
+                    
+<div style="padding-top: 40px">
+                    <div  id="ppp" class="card ht" style="width: 62rem; margin:0px auto;">
+                    <div class="container mt-5 p-3 rounded cart">
+                        <div class="row no-gutters">
+                            <div class="col-md-8"  style="padding-left:20px">
+                                <div class="product-details mr-2">
+                                    <div class="d-flex flex-row align-items-center"><i class="fa fa-long-arrow-left"></i><span class="ml-2 wwqq">Others also learn</span>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
+                                        <div class="d-flex flex-row"><img class="rounded wq" src="./images/js.png" width="70">
+                                            <div class="ml-2"><span class="font-weight-bold d-block">Javascript for game develpoment</span><span class="spec">Anita Okyere | AWS certified tutor</span>
+                                                <div><span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div id="off4" class="d-flex flex-row align-items-center"><span class="d-block"><i class='fas fa-user-friends off2' ></i><small class="off2" style="font-size: 13px; font-weight:500">  12,341</small> 
+                                        </span><span class="d-block ml-5 font-weight-bold">$13</span><i data-name="Python-for-Data-Science" data-price="9.12" class="fa fa-shopping-cart add-to-cart ml-3 text-black-50"></i>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
+                                        <div class="d-flex flex-row"><img class="rounded wq" src="./images/python.png" width="70">
+                                            <div class="ml-2"><span class="font-weight-bold d-block">Object oriented programming with python</span><span class="spec">Anita Okyere | AWS certified tutor</span>
+                                                <div><span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    </div>             
+                                            </div>
+                                        </div>
+                                        <div id="off4"  class="d-flex flex-row align-items-center"><span class="d-block"><span class="d-block"><i class='fas fa-user-friends off2' ></i><small class="off2" style="font-size: 13px; font-weight:500">  12,341</small> </span></span><span class="d-block ml-5 font-weight-bold">$31</span>
+                                            <i data-name="Python-for-Data-Science" data-price="9.12" class="fa fa-shopping-cart add-to-cart ml-3 text-black-50"></i></div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
+                                        <div class="d-flex flex-row"><img class="rounded wq" src="./images/php.png" width="70">
+                                            <div class="ml-2"><span class="font-weight-bold d-block">Andriod apps develoment</span><span class="spec">Anita Okyere | AWS certified tutor</span>
+                                                <div><span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div id="off4"  class="d-flex flex-row align-items-center"><span class="d-block"><span class="d-block"><i class='fas fa-user-friends off2' ></i><small class="off2" style="font-size: 13px; font-weight:500">  12,341</small> </span></span><span class="d-block ml-5 font-weight-bold">$24</span>
+                                            <i data-name="Python-for-Data-Science" data-price="9.12" class="fa fa-shopping-cart add-to-cart ml-3 text-black-50"></i></div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
+                                        <div class="d-flex flex-row"><img class="rounded wq" src="./images/Java.jpg" width="70">
+                                            <div class="ml-2"><span class="font-weight-bold d-block">Analogue and digital communications</span><span class="spec">Anita Okyere | AWS certified tutor</span>
+                                                <div><span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div id="off4"  class="d-flex flex-row align-items-center"><span class="d-block"><span class="d-block"><i class='fas fa-user-friends off2' ></i><small class="off2" style="font-size: 13px; font-weight:500">  12,341</small> </span></span><span class="d-block ml-5 font-weight-bold">$53</span>
+                                            <i data-name="Python-for-Data-Science" data-price="9.12" class="fa fa-shopping-cart add-to-cart ml-3 text-black-50"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div></div>
+
+
+
+            
+<!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div  style="width: 370px;" class="modal-body">
+          <table class="show-cart table">
+            
+          </table>
+          <div>Total price: $<span class="total-cart"></span></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         <a href="../payment.html"><button type="button" class="btn btn-primary">Pay now</button></a> 
+        </button><button class="clear-cart btn btn-danger">Clear Cart</button></div>
+        </div>
+      </div>
+    </div>  </div>
+  </div> 
+    </div> 
+  
+
+
+
+                    
+                    
+                    <div class="container ht bg-trasparent my-4 p-3"> 
+                        <h3  style=" padding-top:60px" class="course-text">More Courses by Instructor</h3>
+                      <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3"> 
+                      
+                        <div class="col"> 
+                            <div id="ret" class="card p-3 bg-white">
+                                <div>
+                                  <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                                </div>
+                                  <div class="about-product text-center mt-2"><img id="des" src="/images/python.png" width="300">
+                                  </div>
+                                  <div class="stats mt-2">
+                                      <div class="d-flex justify-content-between p-price"><h4>Python for OOP</h4></div>
+                                      <div style="font-size: 16px;font-weight:500" class="d-flex justify-content-between p-price"><span>Nana Kwame</span></div>
+                                      <div class="d-flex justify-content-between p-price"><span>$11.3</span><span><del>$34.4</del></span></div>
+                                      </div>
+                                 <div class="d-flex justify-content-between total font-weight-bold mt-4"><span>
+                                        <a data-name="Programming_Course" data-price="11.22" href="#" class="btn add-to-cart  bold-btn" > <i class="fa fa-shopping-cart" style="font-size:24px;color:red"></i></a>
+                                    </i></span><span><i class="fa fa-heart-o" style="font-size:24px"></i></span></div>
+                              </div>
+                      </div> 
+                        
+                        <div class="col"> 
+                            <div id="ret" class="card p-3 bg-white">
+                                <div>
+                                  <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                                </div>
+                                  <div class="about-product text-center mt-2"><img id="des" src="/images/python.png" width="300">
+                                  </div>
+                                  <div class="stats mt-2">
+                                      <div class="d-flex justify-content-between p-price"><h4>Python for OOP</h4></div>
+                                      <div style="font-size: 16px;font-weight:500" class="d-flex justify-content-between p-price"><span>Nana Kwame</span></div>
+                                      <div class="d-flex justify-content-between p-price"><span>$11.3</span><span><del>$34.4</del></span></div>
+                                      </div>
+                                      <div class="d-flex justify-content-between total font-weight-bold mt-4"><span>
+                                        <a data-name="Programming_Course" data-price="11.22" href="#" class="btn add-to-cart  bold-btn" > <i class="fa fa-shopping-cart" style="font-size:24px;color:red"></i></a>
+                                    </i></span><span><i class="fa fa-heart-o" style="font-size:24px"></i></span></div>
+                              </div>
+                      </div> 
+  
+                      <div class="col"> 
+                        <div id="ret" class="card p-3 bg-white">
+                            <div>
+                              <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                            </div>
+                              <div class="about-product text-center mt-2"><img id="des" src="/images/python.png" width="300">
+                              </div>
+                              <div class="stats mt-2">
+                                  <div class="d-flex justify-content-between p-price"><h4>Python for OOP</h4></div>
+                                  <div style="font-size: 16px;font-weight:500" class="d-flex justify-content-between p-price"><span>Nana Kwame</span></div>
+                                  <div class="d-flex justify-content-between p-price"><span>$11.3</span><span><del>$34.4</del></span></div>
+                                  </div>
+                                  <div class="d-flex justify-content-between total font-weight-bold mt-4"><span>
+                                    <a data-name="Programming_Course" data-price="11.22" href="#" class="btn add-to-cart  bold-btn" > <i class="fa fa-shopping-cart" style="font-size:24px;color:red"></i></a>
+                                </i></span><span><i class="fa fa-heart-o" style="font-size:24px"></i></span></div>
+                          </div>
+                  </div> 
+              
+              
+              <div class="col"> 
+                <div id="ret" class="card p-3 bg-white">
+                    <div>
+                      <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                    </div>
+                      <div class="about-product text-center mt-2"><img id="des" src="/images/python.png" width="300">
+                      </div>
+                      <div class="stats mt-2">
+                          <div class="d-flex justify-content-between p-price"><h4>Python for OOP</h4></div>
+                          <div style="font-size: 16px;font-weight:500" class="d-flex justify-content-between p-price"><span>Nana Kwame</span></div>
+                          <div class="d-flex justify-content-between p-price"><span>$11.3</span><span><del>$34.4</del></span></div>
+                          </div>
+                          <div class="d-flex justify-content-between total font-weight-bold mt-4"><span>
+                            <a data-name="Programming_Course" data-price="11.22" href="#" class="btn add-to-cart  bold-btn" > <i class="fa fa-shopping-cart" style="font-size:24px;color:red"></i></a>
+                        </i></span><span><i class="fa fa-heart-o" style="font-size:24px"></i></span></div>
+                  </div>
+              </div> 
+                </div> 
+              </div> 
+              </div>  
+
+
+
+
+              <div style="padding:60px 0px 30px 0px">
+                <div id="rett" class="card ht" style="width: 43rem; margin:0px auto">
+                    <h3 style="padding:20px 0px 0px 20px;">Instructor</h3>
+                    <div style="padding-left: 40px;" class="card-body">
+                            <div class="image-wrap">
+                                <img class="rounded-circle circle" alt="avatar1" src="https://mdbcdn.b-cdn.net/img/new/avatars/9.webp" />
+                               <div style="padding-top: 10px;">
+                                <span class="none1" style="padding: 20px 0px 0px 17px !important;font-weight: 700;  font-size: 15px">David K.</span><br>
+                                <span class="none1" style="padding-left:  20px!important;"><span  class="fa fa-star"></span><span style="padding-left:  10px!important; font-weight:500; font-size:13px">4.7 <span class="ins">Instructor Rating</span></span></span><br>
+                                <span class="none1" style="padding-left:  20px!important;"><span><i class='fas fa-user-friends'></i></span><span style="padding-left:  10px!important; font-weight:500; font-size:13px">1,785,022<span class="ins"> Students</span></span></span><br>
+                                <span class="none1" style="padding-left:  20px!important;"><span><i class="fa fa-play-circle"></i></span><span style="padding-left:  10px!important; font-weight:500; font-size:13px">1,785,022<span class="ins"> Students</span></span></span><br>
+                            </div>
+                           
+                           
+                
+                <div><p><br>I'm Angela, I'm a developer with a passion for teaching. I'm the lead instructor at the London App Brewery, London's leading Programming Bootcamp. I've helped hundreds of thousands of students learn to code and change their lives by becoming a developer. 
+                    I've been invited by companies such as Twitter, Facebook and Google to teach their employees.</p></div>
+                    <p>Was this review helpful?</p>
+                    <span><i class="fa fa-thumbs-up" style="padding-right: 10px !important; font-size:40px; color:rgb(77, 77, 77)"></i> </span>
+                    <span><i class="fa fa-thumbs-down" style="font-size:40px;color:rgb(77, 77, 77); -webkit-transform: scaleX(-1);
+                        transform: scaleX(-1); "></i> </span><span style="padding-left: 15px;"> <a href="#">Report</span></a>
+                    </div>
+                  </div>
+                </div>  
+            
+            
+            
+
+                <section class="section-primary t-bordered" id="rett">
+                    <h3 class="left cen1"><span class="fa fa-star checked"></span><span style="font-size:18px; font-weight:700">  4.7 course rating </span><span style="font-size: 23px; font-weight:700">
+                        <span style="font-size: 10px; padding-left:10px"><i class="fa fa-circle"></i>  </span> 158K ratings</span></h3>
+                    <div class="container" >
+                        <div class="row testimonial-three testimonial-three--col-three">
+                            <div class="col-sm-4 col-md-4  col-lg-4 col-xs-4  testimonial-three-col">
+                                <div class="testimonial-inner">
+                                    <div class="testimonial-image" itemprop="image">
+                                        <img width="180" height="180" src="./images/dp4.jpg">
+                                    </div>
+                                    <div class="testimonial-content">
+                                        <p>
+                                            Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                                        </p>
+                                    </div>
+                                    <div class="testimonial-meta">
+                                        <strong class="testimonial-name" itemprop="name">Anna Vandana</strong>
+                                        <span class="testimonial-job-title" itemprop="jobTitle">CEO</span> – <a class="testimonial-link" href="#" >Media Wiki</a>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="col-sm-4 col-md-4  col-lg-4  col-xs-4 testimonial-three-col">
+                                <div class="testimonial-inner">
+                                    <div class="testimonial-image" itemprop="image">
+                                        <img width="180" height="180" src="./images/dp4.jpg">
+                                    </div>
+                
+                                    <div class="testimonial-content">
+                                        <p>
+                                            In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+                                        </p>
+                                    </div>
+                
+                                    <div class="testimonial-meta">
+                                        <strong class="testimonial-name" itemprop="name">Anna Vandana</strong>
+                                        <span class="testimonial-job-title" itemprop="jobTitle">CEO</span> – <a class="testimonial-link" href="#" >Media Wiki</a>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="col-sm-4 col-md-4 col-lg-4 col-xs-4 testimonial-three-col">
+                                <div class="testimonial-inner">
+                                    <div class="testimonial-image" itemprop="image">
+                                        <img width="180" height="180" src="./images/dp4.jpg">
+                                    </div>
+                                    <div class="testimonial-content">
+                                        <p>
+                                            Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                                        </p>
+                                    </div>
+                                    <div class="testimonial-meta">
+                                        <strong class="testimonial-name" itemprop="name">Anna Vandana</strong>
+                                        <span class="testimonial-job-title" itemprop="jobTitle">CEO</span> – <a class="testimonial-link" href="#" >Media Wiki</a>
+                                    </div>
+                                </div>
+                            </div>
+                
+                             </div>
+                </section>
+            </div>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <footer class="text-center text-lg-start bg-dark text-muted">
+              <section class="" style="padding-top: 5px;">
+                <div class="container text-center text-md-start mt-5">
+                  <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                      <h3 class="text-uppercase fw-bold mb-4"  style="color: aliceblue;">
+                      <span style="color: red; font-weight: 800; font-size:34px;">R</span>aising Plus
+                      </h3>
+                      <p style="color: aliceblue; text-align:justify">
+                        Lorem ipsum dolor sit amet  Amet saepe provident tempore impedit hic, asperiores quis dolores nulla officiis commodi. Amet saepe provident tempore impedit hic, odio iure dolore mollitia dolorem deleniti in.
+                       </p>
+                    </div>
+            
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                      <h6 class="text-uppercase fw-bold mb-4 vv"  style="color: rgb(0, 184, 178);">
+                        Products
+                      </h6>
+                      <p  style="color: aliceblue;">
+                        <a href="#!" class="text-reset">Courses</a>
+                      </p>
+                      <p  style="color: aliceblue;">
+                        <a href="#!" class="text-reset">Courses</a>
+                      </p>
+                      <p  style="color: aliceblue;">
+                        <a href="#!" class="text-reset">Courses</a>
+                      </p>
+                      <p  style="color: aliceblue;">
+                        <a href="#!" class="text-reset">Courses</a>
+                      </p>
+                    </div>
+            
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                      <h6 class="text-uppercase fw-bold mb-4 vv"  style="color: rgb(0, 184, 178);">
+                        Useful links
+                      </h6>
+                      <p  style="color: aliceblue;">
+                        <a href="#!" class="text-reset">Courses</a>
+                      </p>
+                      <p  style="color: aliceblue;">
+                        <a href="#!" class="text-reset">Courses</a>
+                      </p>
+                      <p  style="color: aliceblue;">
+                        <a href="#!" class="text-reset">Courses</a>
+                      </p>
+                      <p  style="color: aliceblue;">
+                        <a href="#!" class="text-reset">Courses</a>
+                      </p>
+                    </div>
+            
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                      <h6 class="text-uppercase fw-bold mb-4 vv"  style="color: rgb(0, 184, 178);">
+                        Useful links
+                      </h6>
+                      <p  style="color: aliceblue;">
+                        <a href="#!" class="text-reset">Courses</a>
+                      </p>
+                      <p  style="color: aliceblue;">
+                        <a href="#!" class="text-reset">Courses</a>
+                      </p>
+                      <p  style="color: aliceblue;">
+                        <a href="#!" class="text-reset">Courses</a>
+                      </p>
+                      <p  style="color: aliceblue;">
+                        <a href="#!" class="text-reset">Courses</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            
+              <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);" >
+              <p  style="color: rgb(255, 255, 255);" style="color: rgb(0, 184, 178);">© <script>document.write(new Date().getFullYear());</script> All Rights Reserved:
+                <a class="text-reset fw-bold"  href="https://mdbootstrap.com/"> 
+                 <span style="color:coral;"> Navantrics</span></a></p>  
+              </div>
+            </footer>
+
+
+
+
+<script src="./js/more.js"></script>
+<script src="./js/script.js"></script>
+<script src="./js/cart.js"></script>
+</body>
+</html>                            

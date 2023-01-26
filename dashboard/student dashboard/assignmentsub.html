@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/studdashboard.css">
+<link rel="icon" type="image/x-icon" href="/images/favicon-.png">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Raising Plus</title>
+<style>
+  .required-field::before {
+    content: "*";
+    color: red;
+    float: right;
+  }
+ 
+  .card h3{
+      font-size: 22px;
+      font-weight:500;
+  }
+  
+  .drop_box{
+      margin: 10px 0;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border: 3px dotted #a3a3a3;
+      border-radius: 5px;
+  }
+  
+  .drop_box h4{
+      font-size: 16px;
+      font-weight:400; 
+      color:#2e2e2e;
+  
+  }
+  body{
+    background-color: #2e2e2e;
+  }
+  
+  .drop_box p{
+      margin-top: 10px;
+      margin-bottom: 20px;
+      font-size: 12px;
+      color:#a3a3a3;
+  }
+  
+  .btn{
+      text-decoration: none;
+      background-color: #5a5a5a;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      outline: none;
+  }
+.head{
+  color: antiquewhite;
+}   
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+#btn{
+  background-color: black !important;
+  color: #fff;
+  border-radius: 2px;
+  border: 2px blue !important;;
+}
+.btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+
+
+</style>
+</head> 
+<body>
+
+    <div class="page-wrapper chiller-theme toggled">
+        <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+          <i class="fas fa-bars"></i>
+        </a>
+        <nav id="sidebar" class="sidebar-wrapper">
+          <div class="sidebar-content">
+            <div class="sidebar-brand">
+                <a class="navbar-brand" href="/index.html">
+                    <img class="logo" src="/images/rp3.png" width="100" height="80" alt="">
+                  </a>
+              <div id="close-sidebar">
+                <i class="fas fa-times"></i>
+              </div>
+            </div>
+            <div class="sidebar-header">
+              <div class="user-pic">
+                <img class="rounded-circle" alt="avatar1" src="https://e7.pngegg.com/pngimages/436/585/png-clipart-computer-icons-user-account-graphics-account-icon-vector-icons-silhouette.png" />
+              </div>
+              <div class="user-info">
+                <span style="color: #fff;" class="user-name">Nana
+                  <strong style="color: #fff;">Kwame</strong>
+                </span>
+                <span class="user-role" style="color: #fff;">Student</span>
+                <span class="user-status">
+                  <i class="fa fa-circle"></i>
+                  <span style="color: #fff;">Online</span>
+                </span>
+              </div>
+            </div>
+            <div class="sidebar-menu" style="padding-top:40px">
+              <ul>
+                <li class="header-menu">
+                  <span style="color: rgb(0, 0, 0);">Menu</span>
+                </li>
+                <li class="sidebar">
+                  <a href="/dashboard/student dashboard/studdashboard.html">
+                    <i class="fa fa-dashboard"></i>
+                    <span id="list">Dashboard</span>
+                  </a>
+                </li>
+                  <li class="sidebar">
+                    <a href="./assignmentsub.html">
+                        <i class="fa fa-money" aria-hidden="true"></i>
+                      <span id="list">Assignment</span>
+                    </a>
+                  </li>
+                  <li class="sidebar">
+                    <a href="./commission.html">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                      <span id="list">Commission</span>
+                    </a>
+                  </li>
+                <li class="sidebar">
+                    <a href="./courselists.html">
+                        <i class="fa fa-list" aria-hidden="true"></i>
+                      <span id="list">Courses list</span>
+                    </a>
+                  </li>
+                  <li class="sidebar">
+                    <a href="./certifications.html">
+                        <i class="fa fa-list" aria-hidden="true"></i>
+                      <span id="list">Certificates</span>
+                    </a>
+                  </li>
+                  <li class="sidebar">
+                    <a href="./refer.html">
+                        <i class="fa fa-user-plus" aria-hidden="true"></i>
+                      <span id="list">Referral</span>
+                    </a>
+                  </li>
+                  <li class="sidebar">
+                    <a href="./profile.html">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                      <span id="list">Profile</span>
+                    </a>
+                  </li>
+                
+            </div>
+          </div>
+          <div class="sidebar-footer">
+            <a href="#">
+              <i class="fa fa-bell"></i>
+              <span class="badge badge-pill badge-warning notification">3</span>
+            </a>
+            <a href="#">
+              <i class="fa fa-envelope"></i>
+              <span class="badge badge-pill badge-success notification">7</span>
+            </a>
+            <a href="#">
+              <i class="fa fa-cog" style="font-size: 20px;"></i>
+              <span class="badge-sonar"></span>
+            </a>
+            <a href="#">
+                <i class="fa fa-sign-out" style="font-size: 20px;"></i>
+            </a>
+          </div>
+        </nav>
+
+
+
+  
+
+        <!-- <script>window.alert("Welcome back");</script> -->
+
+<h1 style="padding-bottom: 10px;" class="head">Welcome to Assignment submission page</h1>
+
+<section class="h-100 ">
+  <div class="container py-5 h-100 vcx">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col">
+        <div class="card card-registration my-4">
+          <div class="row g-0">
+            <div class="col-xl-6 d-none d-xl-block">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
+                alt="Sample photo" class="img-fluid"
+                style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+            </div>
+            <div class="col-xl-6">
+              <div class="card-body p-md-5 text-black">
+
+                <div class="row">
+                  <div class="form-outline mb-4">
+                      <input type="text" id="form3Example1m" class="form-control form-control-lg"  required />
+                      <label class="form-label" for="form3Example1m">First name <span class="required-field"></span></label>
+                  </div>
+                  <div class="form-outline mb-4">
+                      <input type="text" id="form3Example1n" class="form-control form-control-lg"  required />
+                      <label class="form-label" for="form3Example1n">Email <span class="required-field"> </span></label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-outline mb-4">
+                      <input type="text" id="form3Example1m1" class="form-control form-control-lg" />
+                      <label class="form-label" for="form3Example1m1">ID <span class="required-field"> </span></label>
+                  </div>
+                  <div class="form-outline mb-4">
+                      <input type="message" id="form3Example1n1" class="form-control form-control-lg" />
+                      <label class="form-label" for="form3Example1n1">Topic <span class="required-field"> </span></label>
+                    </div>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label for="exampleFormControlTextarea1">Type it here</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                </div>
+
+               
+                
+
+                <div class="form-outline mb-4">
+                <label for="exampleFormControlTextarea1">Upload Files</label>
+                    <div class="drop_box">
+                        <header>
+                      <h4>Select File here</h4>
+                    </header>
+                      <p>Files Supported: PDF, TEXT, DOC , DOCX</p>
+                      <div class="upload-btn-wrapper">
+                        <button class="btn">Upload a file</button>
+                        <input type="file" name="myfile" />
+                      </div>
+                    </div>
+                </div>
+
+
+                <div class="d-flex justify-content-end pt-3">
+                  <button type="button" id="btn" class="btn btn-dark btn-lg ms-2">Submit form</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</main>
+</div>
+
+<script src="../js/scripts.js"></script>
+</body>
+</html>

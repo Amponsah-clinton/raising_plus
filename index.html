@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/css.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head> 
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <a class="navbar-brand" href="../index.html">
+      <img class="logo" src="../images/rp3.png" width="90" height="60" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/teach.html">Teach</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/courses.html">Courses</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Cartegory
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item"href="../courses/Science.html">Science & Mathematics</a>
+            <a class="dropdown-item" href="../courses/tech.html">Technology</a>
+            <a class="dropdown-item" href="../courses/accounting.html">Accounting</a>
+            <a class="dropdown-item" href="../courses/management.html">Management/Leadership</a>
+            <a class="dropdown-item" href="../courses/health.html">Health and Wellness</a>
+            <a class="dropdown-item" href="../courses/artisan.html">Artisan</a>
+            <a class="dropdown-item" href="../courses/electronics.html">Electronics</a>
+            <a class="dropdown-item" href="../courses/agric.html">Agriculture</a>
+            <a class="dropdown-item" href="../courses/engineering.html">Engineering</a>
+          </div>
+        </li>
+      </ul>
+      <div class="search">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search a course">
+        <div class="input-group-append">
+          <button class="btn btn-secondary" type="button">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+      <form class="form-inline my-2 my-lg-0">
+        <div class="register" style="padding-left:10px;"><a class="nav-login" href="/loginas.html">Login
+        </a></div>
+        <div id="register1" class="register" style="padding-left:10px"><a class="nav-signup" href="/signupas.html">Sign up</a>
+        </div>
+      <div class="user-section">
+          <ul class="nav pull-right">
+              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i id="user" class="fa fa-user-circle-o"></i><b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                      <li><a id="log" href="/loginas.html"><i class="fas fa-user"></i> Profile</a></li>
+                      <li><a id="log" href="/loginas.html"><i class="fa fa-sign-out"></i>Logout</a></li>
+                  </ul>
+              </li>
+          </ul>
+        </div>
+        <button type="button" class="icon-button" data-toggle="modal" data-target="#cart">
+          <span class="fa fa-shopping-cart" style="font-size: 33px;"></span>
+          <span class="icon-button__badge"><span class="total-count"></span></span>
+        </button>
+  </form>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 80px;">
+<div id="carousel-2" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">
+  <ol class="carousel-indicators">
+      <li data-target="#carousel-2" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-2" data-slide-to="1"></li>
+      <li data-target="#carousel-2" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    
+      <div class="carousel-item active">
+<div class="xcs">
+           <img id="cou-imgs"  src="https://static.vecteezy.com/system/resources/previews/003/815/829/large_2x/top-view-dark-and-black-background-with-hand-working-on-laptop-and-book-and-learning-geography-and-history-with-global-earth-map-ball-education-and-technology-concept-free-photo.jpg" alt="responsive image" class="d-block img-fluid">
+          </div>
+              <div class="carousel-caption">
+                <div class="card cardsz">
+                  <div class="card-body">
+                    <h2 style="color: black; font-size: 23px" id="demo"></h2>
+                  <p id="two" class="card-text">Sharpen your skills with the best prices of the season. Courses as low as $9.99 through Nov 25.</p>
+                  </div>
+                 </div>
+              </div>
+          </a>
+      </div>
+    
+    
+      <div class="carousel-item">
+            <div class="xcs">
+           <img id="cou-imgs" src="https://img2.storyblok.com//f/90801/2880x1200/56dc4bded9/dark-23.jpg" alt="responsive image" class="d-block img-fluid">
+          </div>
+              <div class="carousel-caption justify-content-center align-items-center">
+                  <div>
+                      <h2>Every project begins with a sketch</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam perferendis, adipisci</p>
+                  </div>
+              </div>
+          </a>
+      </div>
+      <div class="carousel-item">
+        <div class="xcs">
+           <img id="cou-imgs" src="https://www.dashe.com/hubfs/Quotes_About_Learning.jpeg" alt="responsive image" class="d-block img-fluid">
+          </div>
+
+              <div class="carousel-caption justify-content-center align-items-center">
+                  <div>
+                      <h2 style="color: rgb(255, 255, 255);">Lets do it together</h2>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                  </div>
+              </div>
+          </a>
+      </div>
+  </div>
+</div>
+</div>
+
+
+
+<div style="padding-top: 20px;">
+  <marquee  direction="left" class="blink">Learn more by exploring
+     <span style="color: brown; font-weight:800;  font-size: 24px;">Raising Plus</span> wide range of courses at the comfort of your home.</marquee>
+</div>
+
+
+
+
+
+  <h1 style="padding-top:60px" class="headers">Courses section</h1>
+  <div id="all-course" class="container cxz " style="padding-top:50px">
+    <div class="row">
+      <div class="col-6	col-sm-6	.col-md-3	col-lg-3	col-xl-3">
+        <a href="./courses/accounting.html"> 
+          <div id="section-courses" class="card" style="width: 18rem;">
+          <img id="section-image" src="./images/php.png" alt="Card image cap">
+        </div>
+        <h1 class="all-text">Accounting</h1>
+    </div></a>
+    <div  class="col-6	col-sm-6	.col-md-3	col-lg-3	col-xl-3">
+      <a href="./courses/agric.html"><div id="section-courses"  class="card" style="width: 18rem;">
+        <img id="section-image"  src="./images/python.png" alt="Card image cap">
+      </div>
+      <h1 class="all-text">Agriculture</h1>
+  </div></a>
+  <div class="col-6	col-sm-6	.col-md-3	col-lg-3	col-xl-3">
+    <a href="./courses/artisan.html"><div  id="section-courses" class="card" style="width: 18rem;">
+      <img id="section-image" src="./images/python.png" alt="Card image cap">
+    </div>
+    <h1 class="all-text">Artisan</h1>
+  </div></a>
+  <div class="col-6	col-sm-6	.col-md-3	col-lg-3	col-xl-3">
+    <a href="./courses/electronics.html"><div  id="section-courses" class="card" style="width: 18rem;">
+      <img id="section-image"  src="./images/python.png" alt="Card image cap">
+    </div>
+    <h1 class="all-text">Electronics</h1>
+  </div>
+  <div class="container">
+  <div class="row">
+    <div class="col-6	col-sm-6	.col-md-3	col-lg-3	col-xl-3">
+      <a href="./courses/engineering.html"><div  id="section-courses" class="card" style="width: 18rem;">
+        <img id="section-image"  src="./images/python.png" alt="Card image cap">
+      </div>
+      <h1 class="all-text">Engineering</h1>
+  </div></a>
+  <div  class="col-6	col-sm-6	.col-md-3	col-lg-3	col-xl-3">
+    <a href="./courses/health.html"><div  id="section-courses" class="card" style="width: 18rem;">
+      <img id="section-image"  src="./images/python.png" alt="Card image cap">
+    </div>
+    <h1 class="all-text">Health<span class="off"> and Wellness</span></h1>
+  </div></a>
+  <div class="col-6	col-sm-6	.col-md-3	col-lg-3	col-xl-3">
+    <a href="./courses/Science.html"><div  id="section-courses" class="card" style="width: 18rem;">
+    <img id="section-image"  src="./images/python.png" alt="Card image cap">
+  </div>
+  <h1 class="all-text">Mathematics<span class="off"> and Science</span> </h1>
+  </div></a>
+  <div   class="col-6	col-sm-6	.col-md-3	col-lg-3	col-xl-3">
+    <a href="./courses/tech.html"><div  id="section-courses" class="card" style="width: 18rem;">
+    <img id="section-image"  src="./images/python.png" alt="Card image cap">
+  </div>
+  <h1 class="all-text">Technology</h1>
+  </div></a>
+  </div>
+  </div>
+
+<div style="padding-top: 50px;"></div>
+
+
+  <div class="container-fluid" style="padding-bottom:70px;">
+    <div class="row">
+  <h4 class="text-center one">Trusted by over 13,400 great teams</h4>
+  <p  class="text-center two">Leading companies use the same courses to help employees keep their skills fresh.</p>
+      <div class="col-4 col-sm-4	.col-md-4	col-lg-2	col-xl-2">
+        <img class="trusted" src="/images/2.png">
+      </div>
+    <div class="col-4	col-sm-4	.col-md-4	col-lg-2	col-xl-2">
+      <img class="trusted" src="/images/1.png">
+    </div>
+    <div class="col-4	col-sm-4	.col-md-4	col-lg-2	col-xl-2">
+      <img class="trusted" src="/images/3.png">
+    </div>
+    <div class="col-4	col-sm-4	.col-md-4	col-lg-2	col-xl-2">
+      <img class="trusted" src="/images/4.png">
+    </div>
+    <div class="col-4	col-sm-4	.col-md-4	col-lg-2	col-xl-2">
+      <img class="trusted" src="/images/logo.png">
+    </div>
+    <div class="col-4	col-sm-4	.col-md-4	col-lg-2	col-xl-2">
+      <img class="trusted" src="./images/4.png">
+    </div>
+  </div>
+  </div>
+  
+
+
+
+
+
+
+
+<div class="bbb_viewed">
+    <div class="container oft">
+        <div class="row">
+            <div class="col">
+               <div class="bbb_main_container">
+                <div class="bbb_viewed_title_container">
+                    <h3 class="bbb_viewed_title">Recommended for you</h3>
+                    <div class="bbb_viewed_nav_container">
+                        <div class="bbb_viewed_nav bbb_viewed_prev"><i class="fas fa-chevron-left"></i></div>
+                        <div class="bbb_viewed_nav bbb_viewed_next"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                </div>
+                <div class="bbb_viewed_slider_container">
+                    <div class="owl-carousel owl-theme bbb_viewed_slider">
+                        <div class="owl-item">
+                            <div class="bbb_viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
+                              <div class="card" style="width: 11rem; background-color:rgb(248, 248, 248)">
+                                <img style="padding-top: 5px;" class="card-img acc1" src="https://imgix-prod.sgs.com/-/media/sgscorp/images/corporate/services/seed-sprout.cdn.en-GH.1.jpg?auto=format&fit=crop&crop=focalpoint,center&w=645&h=403" alt="Card image cap">
+                               <div><h6 style="padding-top: 14px;" class="text-center">Animal Husbandry</h6></div>
+                               <div class="clearfix mb-3">
+                                <span style="color: black;" class="float-start badge rounded-pill ">1.245$</span>
+                                <span class="float-end">
+                                <i style="color: brown; padding-right:14px" class="fa fa-shopping-cart  add-to-cart" data-name="Python" data-price="1.22"  aria-hidden="true"></i>
+                                  </span>
+                                </div>
+                              </div>
+                            
+                            
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                              <div class="card" style="width: 11rem; background-color:rgb(248, 248, 248)">
+                                <img style="padding-top: 5px;" class="card-img acc1" src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Electronic_circuit.jpg" alt="Card image cap">
+                               <div><h6 style="padding-top: 14px;" class="text-center">Animal Husbandry</h6></div>
+                               <div class="clearfix mb-3">
+                                <span style="color: black;" class="float-start badge rounded-pill ">1.245$</span>
+                                <span class="float-end">
+                                <i style="color: brown;padding-right:14px"class="fa fa-shopping-cart  add-to-cart" data-name="Python" data-price="1.22"  aria-hidden="true"></i>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                          <div class="bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class="card" style="width: 11rem; background-color:rgb(248, 248, 248)">
+                              <img style="padding-top: 5px;" class="card-img acc1" src="https://rowkish.files.wordpress.com/2019/06/healthcare-management-course-from-great-lakes-300x228.jpg" alt="Card image cap">
+                             <div><h6 style="padding-top: 14px;" class="text-center">Animal Husbandry</h6></div>
+                             <div class="clearfix mb-3">
+                              <span style="color: black;" class="float-start badge rounded-pill ">1.245$</span>
+                              <span class="float-end">
+                              <i style="color: brown;padding-right:14px"class="fa fa-shopping-cart  add-to-cart" data-name="Python" data-price="1.22"  aria-hidden="true"></i>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                        <div class="owl-item">
+                          <div class="bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class="card" style="width: 11rem; background-color:rgb(248, 248, 248)">
+                              <img style="padding-top: 5px;" class="card-img acc1" src="http://soic.iupui.edu/files/Computer-3.jpg" alt="Card image cap">
+                             <div><h6 style="padding-top: 14px;" class="text-center">Animal Husbandry</h6></div>
+                             <div class="clearfix mb-3">
+                              <span style="color: black;" class="float-start badge rounded-pill ">1.245$</span>
+                              <span class="float-end">
+                              <i style="color: brown;padding-right:14px"class="fa fa-shopping-cart  add-to-cart" data-name="Python" data-price="1.22"  aria-hidden="true"></i>
+                                </span>
+                              </div>
+                            </div>
+                          
+                          </div>
+                      </div>
+                        <div class="owl-item">
+                            <div class="bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                              <div class="card" style="width: 11rem; background-color:rgb(248, 248, 248)">
+                                <img style="padding-top: 5px;" class="card-img acc1" src="https://miro.medium.com/max/1038/1*X3-GPoKHA6P0WnUF7nS_GQ.jpeg" alt="Card image cap">
+                               <div><h6 style="padding-top: 14px;" class="text-center">Animal Husbandry</h6></div>
+                               <div class="clearfix mb-3">
+                                <span style="color: black;" class="float-start badge rounded-pill ">1.245$</span>
+                                <span class="float-end">
+                                <i style="color: brown;padding-right:14px"class="fa fa-shopping-cart  add-to-cart" data-name="Python" data-price="1.22"  aria-hidden="true"></i>
+                                  </span>
+                                </div>
+                              </div>
+                            
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="bbb_viewed_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                              <div class="card" style="width: 11rem; background-color:rgb(248, 248, 248)">
+                                <img style="padding-top: 5px;" class="card-img acc1" src="https://imageio.forbes.com/specials-images/imageserve/5f1e55e18ba283c9ad86684a/0x0.jpg?format=jpg&width=1200" alt="Card image cap">
+                               <div><h6 style="padding-top: 14px;" class="text-center">Animal Husbandry</h6></div>
+                               <div class="clearfix mb-3">
+                                <span style="color: black;" class="float-start badge rounded-pill ">1.245$</span>
+                                <span class="float-end">
+                                <i style="color: brown;padding-right:14px"class="fa fa-shopping-cart  add-to-cart" data-name="Python" data-price="1.22"  aria-hidden="true"></i>
+                                  </span>
+                                </div>
+                              </div>
+                            
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="bbb_viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
+                              <div class="card" style="width: 11rem; background-color:rgb(248, 248, 248)">
+                                <img style="padding-top: 5px;" class="card-img acc1" src="https://cdn.shortpixel.ai/spai/q_lossy+w_998+h_561+to_auto+ret_img/https://cosmosmagazine.com/wp-content/uploads/2022/05/math.jpg" alt="Card image cap">
+                               <div><h6 style="padding-top: 14px;" class="text-center">Animal Husbandry</h6></div>
+                               <div class="clearfix mb-3">
+                                <span style="color: black;" class="float-start badge rounded-pill ">1.245$</span>
+                                <span class="float-end">
+                                <i style="color: brown;padding-right:14px"class="fa fa-shopping-cart  add-to-cart" data-name="Python" data-price="1.22"  aria-hidden="true"></i>
+                                  </span>
+                                </div>
+                              </div>
+                            
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                              <div class="card" style="width: 11rem; background-color:rgb(248, 248, 248)">
+                                <img style="padding-top: 5px;" class="card-img acc1" src="https://www.3ds.com/assets/invest/styles/profile/public/2022-04/glass-molecules-1.jpg.webp?itok=SQu_L9U5" alt="Card image cap">
+                               <div><h6 style="padding-top: 14px;" class="text-center">Animal Husbandry</h6></div>
+                               <div class="clearfix mb-3">
+                                <span style="color: black;" class="float-start badge rounded-pill ">1.245$</span>
+                                <span class="float-end">
+                                <i style="color: brown;padding-right:14px"class="fa fa-shopping-cart  add-to-cart" data-name="Python" data-price="1.22"  aria-hidden="true"></i>
+                                  </span>
+                                </div>
+                              </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </div> 
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+  <div  class="container-fluid business">
+    <div class="row">
+      <div class="col-sm-3 col-md-6">
+        <div style="float:right;">
+        <img id="kj" src="https://s.udemycdn.com/home/non-student-cta/ub-1x-v3.jpg">
+      </div></div>
+      <div class="col-sm-9 col-md-6">
+        <div class="starts" style="float:left">
+          <h1 id="nm" style="font-size: 27px;"><span style="color: violet;">Raising Plus</span> Business</h1>
+          <p id="mn" class="three" style="text-align: justify;padding:10px 0px;font-weight:500">Get unlimited access to 19,000+ of Raising Plus's top courses for your team. Learn and improve skills across business, tech, design, and more.</p>
+       <a class="nav-login" href="#">Raising Plus Business</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div  style="width: 370px;" class="modal-body">
+        <table class="show-cart table">
+          
+        </table>
+        <div>Total price: $<span class="total-cart"></span></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+       <a href="./payment.html"><button type="button" class="btn btn-primary">Pay now</button></a> 
+      </button><button class="clear-cart btn btn-danger">Clear Cart</button></div>
+      </div>
+    </div>
+  </div>  </div>
+</div> 
+  </div> 
+
+
+  <section class="ourwork-tab-wrap" style="padding: 80px 10px;">
+    <div class="container">
+      <h1 class="acc" style="font-family:'Times New Roman', Times, serif;font-size:31px;font-weight:600;">A broad selection of courses</h1>
+      <p class="acd" style="padding:17px 20px 0px 0px;font-family:'Times New Roman', Times, serif;font-size: 17px;">Choose from 213,000 online video courses with new additions published every month</p>
+      <ul id="tabs" class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a id="tab-A" href="#pane-A" class="nav-link active" data-toggle="tab" role="tab">Artisan</a>
+        </li>
+        <li class="nav-item">
+          <a id="tab-B" href="#pane-B" class="nav-link" data-toggle="tab" role="tab">Electronics</a>
+        </li>
+        <li class="nav-item">
+          <a id="tab-C" href="#pane-C" class="nav-link" data-toggle="tab" role="tab">Health</a>
+        </li>
+        <li class="nav-item">
+          <a id="tab-D" href="#pane-D" class="nav-link" data-toggle="tab" role="tab">Management</a>
+        </li>
+      </ul>
+  
+      <div id="content" class="tab-content" role="tablist">
+        <div id="pane-A" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="tab-A">
+          <div class="card-header" role="tab" id="heading-A">
+            <h5 class="mb-0">
+              <a data-toggle="collapse" href="#collapse-A" aria-expanded="true" aria-controls="collapse-A">
+              Artisan
+                <i class="fa fa-plus"></i>
+              </a>
+            </h5>
+          </div>
+  
+          <div id="collapse-A" class="collapse show" data-parent="#content" role="tabpanel" aria-labelledby="heading-A">
+            <div class="card-body new-card-body">
+              <div class="row">
+                <div class="col-md-12">
+                  <h5 class="expand" style=" font-weight: 700; font-size: 21px; padding: 10px 0px 0px 11px;">Expand your career opportunities with Python 4 </h5>
+                  <p style="font-size: 15px;padding: 10px 0px 0px 11px;" class="card-text">Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful language. 
+                    Its <br> simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning. 
+                    You’ll <br> learn how to build everything from games to sites to apps. Choose from a range of courses that will appeal to...</p>
+                 <div class="explore">
+                    <a href='/courses/artisan.html'><button class="nav-login">Explore       Artisan</button></a> </div>
+                </div>
+  
+
+      <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative">
+        <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+          <div class="col hp">
+            <div class="card h-100 shadow-sm">
+              <a href="./coursepreview.html">
+                <img src="./images/Java.jpg" class="card-img-top" alt="product.title" />
+              </a>
+              <div class="card-body">
+                <div class="clearfix mb-3">
+                  <span class="float-start badge rounded-pill bg-danger ">1.245$</span>
+      
+                  <span class="float-end"><span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    </span>
+                  </div>
+                  <h5 id="course-title" class="card-title">Python Programming Course <br>
+                    <span style="font-weight: 100;padding-top:8px;font-size:15px"> Nana Kwame</span></h5>
+                  <div class="d-grid gap-2 my-4">
+                  <a href="#" data-name="Python" data-price="1.22" class="add-to-cart btn btn-success">ADD TO CART</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col hp">
+            <div class="card h-100 shadow-sm">
+              <a href="./coursepreview.html">
+                <img src="./images/swift.png" class="card-img-top" alt="product.title" />
+              </a>
+              <div class="card-body">
+                <div class="clearfix mb-3">
+                  <span class="float-start badge rounded-pill bg-danger ">1.245$</span>
+      
+                  <span class="float-end"><span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    </span>
+                </div>
+                <h5 id="course-title" class="card-title">Python Programming Course <br><span style="font-weight: 100;padding-top:8px;font-size:15px"> Nana Kwame</span></h5>
+                <div class="d-grid gap-2 my-4">
+                  <a data-name="Python_Programming_Course" data-price="11.22" href="#" class="btn add-to-cart btn-success bold-btn" >add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col hp">
+            <div class="card h-100 shadow-sm">
+              <a href="./coursepreview.html">
+                <img src="./images/images.png" class="card-img-top" alt="product.title" />
+              </a>
+              <div class="card-body">
+                <div class="clearfix mb-3">
+                  <span class="float-start badge rounded-pill bg-danger ">1.245$</span>
+      
+                  <span class="float-end"><span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    </span>
+                </div>
+                <h5 id="course-title" class="card-title">Python Programming Course <br><span style="font-weight: 100;padding-top:8px;font-size:15px"> Nana Kwame</span></h5>
+                <div class="d-grid gap-2 my-4">
+                  <a data-name="Python_Programming_Course" data-price="11.22" href="#" class="btn add-to-cart btn-success bold-btn" >add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col hp">
+            <div class="card h-100 shadow-sm">
+              <a href="./coursepreview.html">
+                <img src="./images/python.png" class="card-img-top" alt="product.title" />
+              </a>
+              <div class="card-body">
+                <div class="clearfix mb-3">
+                  <span class="float-start badge rounded-pill bg-danger ">1.245$</span>
+      
+                  <span class="float-end"><span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    </span>
+                </div>
+                <h5 id="course-title" class="card-title">Python Programming Course <br><span style="font-weight: 100;padding-top:8px;font-size:15px"> Nana Kwame</span></h5>
+                <div class="d-grid gap-2 my-4">
+                  <a data-name="Python_Programming_Course" data-price="11.22" href="#" class="btn add-to-cart btn-success bold-btn" >add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+</div>
+  
+        <div id="pane-B" class="card tab-pane fade" role="tabpanel" aria-labelledby="tab-B">
+          <div class="card-header" role="tab" id="heading-B">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" href="#collapse-B" aria-expanded="false" aria-controls="collapse-B">
+                Electronics
+                <i class="fa fa-plus"></i>
+              </a>
+            </h5>
+          </div>
+          <div id="collapse-B" class="collapse" data-parent="#content" role="tabpanel" aria-labelledby="heading-B">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12">
+                  <h5 class="expand" style=" font-weight: 700; font-size: 21px; padding: 10px 0px 0px 11px;">Expand your career opportunities with Python 4 </h5>
+                  <p style="font-size: 15px;padding: 10px 0px 0px 11px;" class="card-text">Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful language. 
+                    Its <br> simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning. 
+                    You’ll <br> learn how to build everything from games to sites to apps. Choose from a range of courses that will appeal to...</p>
+                 <div class="explore">
+                    <a href='/courses/electronics.html'><button class="nav-login">Explore  Electronics</button></a> </div>
+                  <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative">
+                    <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+                      <div class="col hp">
+                        <div class="card h-100 shadow-sm">
+                          <a href="#">
+                            <img src="./images/Java.jpg" class="card-img-top" alt="product.title" />
+                          </a>
+                          <div class="card-body">
+                            <div class="clearfix mb-3">
+                              <span class="float-start badge rounded-pill bg-info ">1.245$</span>
+                  
+                              <span class="float-end"><span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                </span>
+                            </div>
+                            <h5 id="course-title" class="card-title">Python Programming Course <br><span style="font-weight: 100;padding-top:8px;font-size:15px"> Nana Kwame</span></h5>
+                            <div class="d-grid gap-2 my-4">
+                              <a data-name="Python_Programming_Course" data-price="11.22" href="#" class="btn add-to-cart btn-success bold-btn" >add to cart</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col hp">
+                        <div class="card h-100 shadow-sm">
+                          <a href="#">
+                            <img src="./images/swift.png" class="card-img-top" alt="product.title" />
+                          </a>
+                          <div class="card-body">
+                            <div class="clearfix mb-3">
+                              <span class="float-start badge rounded-pill bg-info ">1.245$</span>
+                  
+                              <span class="float-end"><span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                </span>
+                            </div>
+                            <h5 id="course-title" class="card-title">Python Programming Course <br><span style="font-weight: 100;padding-top:8px;font-size:15px"> Nana Kwame</span></h5>
+                            <div class="d-grid gap-2 my-4">
+                              <a data-name="Python_Programming_Course" data-price="11.22" href="#" class="btn add-to-cart btn-success bold-btn" >add to cart</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col hp">
+                        <div class="card h-100 shadow-sm">
+                          <a href="#">
+                            <img src="./images/images.png" class="card-img-top" alt="product.title" />
+                          </a>
+                          <div class="card-body">
+                            <div class="clearfix mb-3">
+                              <span class="float-start badge rounded-pill bg-info ">1.245$</span>
+                  
+                              <span class="float-end"><span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                </span>
+                            </div>
+                            <h5 id="course-title" class="card-title">Python Programming Course <br><span style="font-weight: 100;padding-top:8px;font-size:15px"> Nana Kwame</span></h5>
+                            <div class="d-grid gap-2 my-4">
+                              <a data-name="Python_Programming_Course" data-price="11.22" href="#" class="btn add-to-cart btn-success bold-btn" >add to cart</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col hp">
+                        <div class="card h-100 shadow-sm">
+                          <a href="#">
+                            <img src="./images/python.png" class="card-img-top" alt="product.title" />
+                          </a>
+                          <div class="card-body">
+                            <div class="clearfix mb-3">
+                              <span class="float-start badge rounded-pill bg-info ">1.245$</span>
+                  
+                              <span class="float-end"><span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                </span>
+                            </div>
+                            <h5 id="course-title" class="card-title">Python Programming Course <br><span style="font-weight: 100;padding-top:8px;font-size:15px"> Nana Kwame</span></h5>
+                            <div class="d-grid gap-2 my-4">
+                              <a data-name="Python_Programming_Course" data-price="11.22" href="#" class="btn add-to-cart btn-success bold-btn" >add to cart</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div id="pane-C" class="card tab-pane fade" role="tabpanel" aria-labelledby="tab-C">
+          <div class="card-header" role="tab" id="heading-C">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" href="#collapse-C" aria-expanded="false" aria-controls="collapse-C">
+                Health
+                <i class="fa fa-plus"></i>
+              </a>
+            </h5>
+          </div>
+          <div id="collapse-C" class="collapse" role="tabpanel" data-parent="#content" aria-labelledby="heading-C">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12">
+                  <h5 class="expand" style=" font-weight: 700; font-size: 21px; padding: 10px 0px 0px 11px;">Expand your career opportunities with Python 4 </h5>
+                  <p style="font-size: 15px;padding: 10px 0px 0px 11px;" class="card-text">Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful language. 
+                    Its <br> simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning. 
+                    You’ll <br> learn how to build everything from games to sites to apps. Choose from a range of courses that will appeal to...</p>
+                 <div class="explore">
+                    <a href='./courses/health.html'><button class="nav-login">Explore Health</button></a> </div>
+                  <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative">
+                    <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+                      <div class="col hp">
+                        <div class="card h-100 shadow-sm">
+                          <a href="#">
+                            <img src="./images/Java.jpg" class="card-img-top" alt="product.title" />
+                          </a>
+                          <div class="card-body">
+                            <div class="clearfix mb-3">
+                              <span class="float-start badge rounded-pill bg-primary ">1.245$</span>
+                  
+                              <span class="float-end"><span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                </span>
+                            </div>
+                            <h5 id="course-title" class="card-title">Python Programming Course <br><span style="font-weight: 100;padding-top:8px;font-size:15px"> Nana Kwame</span></h5>
+                            <div class="d-grid gap-2 my-4">
+                              <a href="#" class="btn btn-success bold-btn">add to cart</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col hp">
+                        <div class="card h-100 shadow-sm">
+                          <a href="#">
+                            <img src="./images/swift.png" class="card-img-top" alt="product.title" />
+                          </a>
+                          <div class="card-body">
+                            <div class="clearfix mb-3">
+                              <span class="float-start badge rounded-pill bg-primary ">1.245$</span>
+                  
+                              <span class="float-end"><span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                </span>
+                            </div>
+                            <h5 id="course-title" class="card-title">Python Programming Course <br><span style="font-weight: 100;padding-top:8px;font-size:15px"> Nana Kwame</span></h5>
+                            <div class="d-grid gap-2 my-4">
+                              <a data-name="Programming_Course" data-price="11.22" href="#" class="btn add-to-cart btn-success bold-btn" >add to cart</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col hp">
+                        <div class="card h-100 shadow-sm">
+                          <a href="#">
+                            <img src="./images/images.png" class="card-img-top" alt="product.title" />
+                          </a>
+                          <div class="card-body">
+                            <div class="clearfix mb-3">
+                              <span class="float-start badge rounded-pill bg-primary ">1.245$</span>
+                  
+                              <span class="float-end"><span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                </span>
+                            </div>
+                            <h5 id="course-title" class="card-title">Python Programming Course <br><span style="font-weight: 100;padding-top:8px;font-size:15px"> Nana Kwame</span></h5>
+                            <div class="d-grid gap-2 my-4">
+                              <a data-name="Java_Programming_Course" data-price="11.22" href="#" class="btn add-to-cart btn-success bold-btn" >add to cart</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col hp">
+                        <div class="card h-100 shadow-sm">
+                          <a href="#">
+                            <img src="./images/python.png" class="card-img-top" alt="product.title" />
+                          </a>
+                          <div class="card-body">
+                            <div class="clearfix mb-3">
+                              <span class="float-start badge rounded-pill bg-primary ">1.245$</span>
+                  
+                              <span class="float-end"><span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                </span>
+                            </div>
+                            <h5 id="course-title" class="card-title">Python Programming Course <br><span style="font-weight: 100;padding-top:8px;font-size:15px"> Nana Kwame</span></h5>
+                            <div class="d-grid gap-2 my-4">
+                              <a data-name="Programming_Course" data-price="11.22" href="#" class="btn add-to-cart btn-success bold-btn" >add to cart</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="pane-D" class="card tab-pane fade" role="tabpanel" aria-labelledby="tab-D">
+          <div class="card-header" role="tab" id="heading-D">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" href="#collapse-D" aria-expanded="false" aria-controls="collapse-D">
+                Management
+                <i class="fa fa-plus"></i>
+              </a>
+            </h5>
+          </div>
+          <div id="collapse-D" class="collapse" role="tabpanel" data-parent="#content" aria-labelledby="heading-D">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12">
+                  <h5 class="expand" style=" font-weight: 700; font-size: 21px; padding: 10px 0px 0px 11px;">Expand your career opportunities with Python 4 </h5>
+                  <p style="font-size: 15px;padding: 10px 0px 0px 11px;" class="card-text">Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful language. 
+                    Its <br> simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning. 
+                    You’ll <br> learn how to build everything from games to sites to apps. Choose from a range of courses that will appeal to...</p>
+                 <div class="explore">
+                    <a href='./courses/management.html'><button class="nav-login">Explore Management</button></a> </div>
+                  <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative">
+                    <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+                      <div class="col hp">
+                        <div class="card h-100 shadow-sm">
+                          <a href="#">
+                            <img src="./images/Java.jpg" class="card-img-top" alt="product.title" />
+                          </a>
+                          <div class="card-body">
+                            <div class="clearfix mb-3">
+                              <span class="float-start badge rounded-pill bg-secondary ">1.245$</span>
+                  
+                              <span class="float-end"><span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                </span>
+                            </div>
+                            <h5 id="course-title" class="card-title">Python Programming Course <br><span style="font-weight: 100;padding-top:8px;font-size:15px"> Nana Kwame</span></h5>
+                            <div class="d-grid gap-2 my-4">
+                              <a data-name="Programming_Course" data-price="11.22" href="#" class="btn add-to-cart btn-success bold-btn" >add to cart</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col hp">
+                        <div class="card h-100 shadow-sm">
+                          <a href="#">
+                            <img src="./images/swift.png" class="card-img-top" alt="product.title" />
+                          </a>
+                          <div class="card-body">
+                            <div class="clearfix mb-3">
+                              <span class="float-start badge rounded-pill bg-secondary ">1.245$</span>
+                  
+                              <span class="float-end"><span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                </span>
+                            </div>
+                            <h5 id="course-title" class="card-title">Python Programming Course <br><span style="font-weight: 100;padding-top:8px;font-size:15px"> Nana Kwame</span></h5>
+                            <div class="d-grid gap-2 my-4">
+                              <a data-name="Programming_Course" data-price="11.22" href="#" class="btn add-to-cart btn-success bold-btn" >add to cart</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col hp">
+                        <div class="card h-100 shadow-sm">
+                          <a href="#">
+                            <img src="./images/images.png" class="card-img-top" alt="product.title" />
+                          </a>
+                          <div class="card-body">
+                            <div class="clearfix mb-3">
+                              <span class="float-start badge rounded-pill bg-secondary ">1.245$</span>
+                  
+                              <span class="float-end"><span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                </span>
+                            </div>
+                            <h5 id="course-title" class="card-title">Python Programming Course <br><span style="font-weight: 100;padding-top:8px;font-size:15px"> Nana Kwame</span></h5>
+                            <div class="d-grid gap-2 my-4">
+                              <a data-name="Programming_Course" data-price="11.22" href="#" class="btn add-to-cart btn-success bold-btn" >add to cart</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col hp">
+                        <div class="card h-100 shadow-sm">
+                          <a href="#">
+                            <img src="./images/python.png" class="card-img-top" alt="product.title" />
+                          </a>
+                          <div class="card-body">
+                            <div class="clearfix mb-3">
+                              <span class="float-start badge rounded-pill bg-secondary">1.245$</span>
+                  
+                              <span class="float-end"><span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                </span>
+                            </div>
+                            <h5 id="course-title" class="card-title">Python Programming Course <br><span style="font-weight: 100;padding-top:8px;font-size:15px"> Nana Kwame</span></h5>
+                            <div class="d-grid gap-2 my-4">
+                              <a data-name="Programming_Course" data-price="11.22" href="#" class="btn add-to-cart btn-success bold-btn" >add to cart</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>   </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <h1 class="headers">Students are viewing</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 ">
+        <div class="d-flex justify-content-center container mt-5">
+          <div class="card p-3 bg-white">
+            <div>
+              <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+            </div>
+              <div class="about-product text-center mt-2"><img id="des" src="/images/python.png" width="200">
+                
+              </div>
+              <div class="stats mt-2">
+                  <div class="d-flex justify-content-between p-price"><h4>Python for OOP1</h4></div>
+                  <div style="font-size: 16px;font-weight:500" class="d-flex justify-content-between p-price"><span>Nana Kwame</span></div>
+                  <div class="d-flex justify-content-between p-price"><span>$11.3</span><span><del>$34.4</del></span></div>
+                  </div>
+              <div class="d-flex justify-content-between total font-weight-bold mt-4"><span>
+                  <a data-name="Programming_Course" data-price="11.22" href="#" class="btn add-to-cart  bold-btn" > <i class="fa fa-shopping-cart" style="font-size:24px;color:red"></i></a>
+              </i></span><span><i class="fa fa-heart-o" style="font-size:24px"></i></span></div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-6 ">
+        <div class="d-flex justify-content-center container mt-5">
+          <div class="card p-3 bg-white">
+            <div>
+              <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+            </div>
+              <div class="about-product text-center mt-2"><img id="des" src="/images/python.png" width="300">
+                
+              </div>
+              <div class="stats mt-2">
+                  <div class="d-flex justify-content-between p-price"><h4>Python for OOP</h4></div>
+                  <div style="font-size: 16px;font-weight:500" class="d-flex justify-content-between p-price"><span>Nana Kwame</span></div>
+                  <div class="d-flex justify-content-between p-price"><span>$11.3</span><span><del>$34.4</del></span></div>
+                  </div>
+                  <div class="d-flex justify-content-between total font-weight-bold mt-4"><span>
+                    <a data-name="Programming_Course" data-price="11.22" href="#" class="btn add-to-cart  bold-btn" > <i class="fa fa-shopping-cart" style="font-size:24px;color:red"></i></a>
+                </i></span><span><i class="fa fa-heart-o" style="font-size:24px"></i></span></div>
+            </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-6 ">
+        <div class="d-flex justify-content-center container mt-5">
+          <div class="card p-3 bg-white">
+            <div>
+              <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+            </div>
+              <div class="about-product text-center mt-2"><img id="des" src="/images/python.png" width="300">
+              </div>
+              <div class="stats mt-2">
+                  <div class="d-flex justify-content-between p-price"><h4>Python for OOP</h4></div>
+                  <div style="font-size: 16px;font-weight:500" class="d-flex justify-content-between p-price"><span>Nana Kwame</span></div>
+                  <div class="d-flex justify-content-between p-price"><span>$11.3</span><span><del>$34.4</del></span></div>
+                  </div>
+                  <div class="d-flex justify-content-between total font-weight-bold mt-4"><span>
+                    <a data-name="Programming_Course" data-price="11.22" href="#" class="btn add-to-cart  bold-btn" > <i class="fa fa-shopping-cart" style="font-size:24px;color:red"></i></a>
+                </i></span><span><i class="fa fa-heart-o" style="font-size:24px"></i></span></div>
+            </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-6 ">
+        <div class="d-flex justify-content-center container mt-5">
+          <div class="card p-3 bg-white">
+            <div>
+              <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+            </div>
+              <div class="about-product text-center mt-2"><img id="des" src="/images/python.png" width="300">
+                
+              </div>
+              <div class="stats mt-2">
+                  <div class="d-flex justify-content-between p-price"><h4>Python for OOP</h4></div>
+                  <div style="font-size: 16px;font-weight:500" class="d-flex justify-content-between p-price"><span>Nana Kwame</span></div>
+                  <div class="d-flex justify-content-between p-price"><span>$11.3</span><span><del>$34.4</del></span></div>
+                  </div>
+                  <div class="d-flex justify-content-between total font-weight-bold mt-4"><span>
+                    <a data-name="Programming_Course" data-price="11.22" href="#" class="btn add-to-cart  bold-btn" > <i class="fa fa-shopping-cart" style="font-size:24px;color:red"></i></a>
+                </i></span><span><i class="fa fa-heart-o" style="font-size:24px"></i></span></div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 ">
+        <div class="d-flex justify-content-center container mt-5">
+          <div class="card p-3 bg-white">
+            <div>
+              <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+            </div>
+              <div class="about-product text-center mt-2"><img id="des" src="/images/python.png" width="200">
+                
+              </div>
+              <div class="stats mt-2">
+                  <div class="d-flex justify-content-between p-price"><h4>Python for OOP</h4></div>
+                  <div style="font-size: 16px;font-weight:500" class="d-flex justify-content-between p-price"><span>Nana Kwame</span></div>
+                  <div class="d-flex justify-content-between p-price"><span>$11.3</span><span><del>$34.4</del></span></div>
+                  </div>
+                  <div class="d-flex justify-content-between total font-weight-bold mt-4"><span>
+                    <a data-name="Programming_Course" data-price="11.22" href="#" class="btn add-to-cart  bold-btn" > <i class="fa fa-shopping-cart" style="font-size:24px;color:red"></i></a>
+                </i></span><span><i class="fa fa-heart-o" style="font-size:24px"></i></span></div>
+            </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-6 ">
+        <div class="d-flex justify-content-center container mt-5">
+          <div class="card p-3 bg-white">
+            <div>
+              <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+            </div>
+              <div class="about-product text-center mt-2"><img id="des" src="/images/python.png" width="300">
+                
+              </div>
+              <div class="stats mt-2">
+                  <div class="d-flex justify-content-between p-price"><h4>Python for OOP</h4></div>
+                  <div style="font-size: 16px;font-weight:500" class="d-flex justify-content-between p-price"><span>Nana Kwame</span></div>
+                  <div class="d-flex justify-content-between p-price"><span>$11.3</span><span><del>$34.4</del></span></div>
+                  </div>
+                  <div class="d-flex justify-content-between total font-weight-bold mt-4"><span>
+                    <a data-name="Programming_Course" data-price="11.22" href="#" class="btn add-to-cart  bold-btn" > <i class="fa fa-shopping-cart" style="font-size:24px;color:red"></i></a>
+                </i></span><span><i class="fa fa-heart-o" style="font-size:24px"></i></span></div>
+            </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-6 ">
+        <div class="d-flex justify-content-center container mt-5">
+          <div class="card p-3 bg-white">
+            <div>
+              <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+            </div>
+              <div class="about-product text-center mt-2"><img id="des" src="/images/python.png" width="300">
+              </div>
+              <div class="stats mt-2">
+                  <div class="d-flex justify-content-between p-price"><h4>Python for OOP</h4></div>
+                  <div style="font-size: 16px;font-weight:500" class="d-flex justify-content-between p-price"><span>Nana Kwame</span></div>
+                  <div class="d-flex justify-content-between p-price"><span>$11.3</span><span><del>$34.4</del></span></div>
+                  </div>
+                  <div class="d-flex justify-content-between total font-weight-bold mt-4"><span>
+                    <a data-name="Programming_Course" data-price="11.22" href="#" class="btn add-to-cart  bold-btn" > <i class="fa fa-shopping-cart" style="font-size:24px;color:red"></i></a>
+                </i></span><span><i class="fa fa-heart-o" style="font-size:24px"></i></span></div>
+            </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-6 ">
+        <div class="d-flex justify-content-center container mt-5">
+          <div class="card p-3 bg-white">
+            <div>
+              <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+            </div>
+              <div class="about-product text-center mt-2"><img id="des" src="/images/python.png" width="300">
+                
+              </div>
+              <div class="stats mt-2">
+                  <div class="d-flex justify-content-between p-price"><h4>Python for OOP</h4></div>
+                  <div style="font-size: 16px;font-weight:500" class="d-flex justify-content-between p-price"><span>Nana Kwame</span></div>
+                  <div class="d-flex justify-content-between p-price"><span>$11.3</span><span><del>$34.4</del></span></div>
+                  </div>
+                  <div class="d-flex justify-content-between total font-weight-bold mt-4"><span>
+                    <a data-name="Programming_Course" data-price="11.22" href="#" class="btn add-to-cart  bold-btn" > <i class="fa fa-shopping-cart" style="font-size:24px;color:red"></i></a>
+                </i></span><span><i class="fa fa-heart-o" style="font-size:24px"></i></span></div>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  
+  
+  
+  
+  <div id="xaa" class="container-fluid" style="padding-top: 80px;">
+    <div class="row">
+      <div class="col-sm-3 col-md-6">
+        <div class="starts" style="float:right">
+          <h1 id="kj" style="font-size: 27px;"><span style="color: violet;">Raising Plus</span> Teaching</h1>
+          <p id="kj" class="three" style="text-align: justify;padding:10px 0px;font-weight:500">Get unlimited access to 19,000+ of Raising Plus's top courses for your team. Learn and improve skills across business, tech, design, and more.</p>
+       <a id="kj" class="nav-login" href="/loginas.html">Raising Plus Business</a>
+        </div>
+    </div>
+      <div class="col-sm-9 col-md-6">
+        <div style="float:left;">
+        <img class="ude" src="https://s.udemycdn.com/home/non-student-cta/instructor-1x-v3.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+
+  
+  <div class="p-5 mx-auto mt-3 mb-3" style="max-width:600px;padding-top:50px">
+    <h1 id="sa" class="headers">What our students say</h1>
+    <div style="padding-top:50px" id="carouselTestimonial" class="carousel carousel-testimonial slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselTestimonial" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselTestimonial" data-slide-to="1"></li>
+      <li data-target="#carouselTestimonial" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item text-center active">
+      <div class="carousel-testimonial-img p-1   m-auto">
+     <img id="gg" class="rounded-circle shadow-4-strong" alt="avatar2" src="./images/dp4.jpg" />
+      </div>
+      <p class="m-0 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, consectetur adipiscing elit varius quam at, luctus dui. Mauris magna metus consectetur adipiscing elit.</p>
+      <h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Amponsah</strong></h5>
+      <h6 class="text-dark m-0">Web Developer</h6>
+    </div>
+      <div class="carousel-item text-center">
+      <div class="carousel-testimonial-img p-1 m-auto">
+        <img id="gg" class="rounded-circle shadow-4-strong" alt="avatar2" src="./images/dp4.jpg" />
+      </div>
+      <p class="m-0 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, consectetur adip varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel.</p>
+      <h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Kwame</strong></h5>
+      <h6 class="text-dark m-0">Web Designer</h6>
+    </div>
+      <div class="carousel-item text-center">
+      <div class="carousel-testimonial-img p-1 m-auto">
+        <img id="gg" class="rounded-circle shadow-4-strong" alt="avatar2" src="./images/dp4.jpg" />
+      </div>
+      <p class="m-0 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, consectetur adipiscing elit consectetur adipiscing elit luctus dui. Mauris magna metus.</p>
+      <h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Nana</strong></h5>
+      <h6 class="text-dark m-0">Seo Analyst</h6>
+    </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselTestimonial" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselTestimonial" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    </div>
+  </div>
+</div></div></div></div>
+ 
+
+
+
+<h1 class="headers">Featured topics by category</h1>
+<div class="container text-center" style="padding: 30px;">
+<section  style="padding-top: 30px;" class="">
+  <div class="row ">
+    <div id="cent" class="col-6	col-sm-6	.col-md-3	col-lg-3	col-xl-3">
+      <h5 class="text-uppercase topic">Artisan</h5>
+
+      <ul class="list-unstyled mb-0">
+        <li>
+          <a href="#!" class="text">Python</a>
+        </li>
+        <p3 class="std-no">16,221,994 students</p3>
+        <li>
+          <a href="#!" class="text">Java</a>
+        </li>
+        <p3 class="std-no">26,254,191 students</p3>
+        <li>
+          <a href="#!" class="text">PHP</a>
+        </li>
+        <p3 class="std-no">36,354,994 students</p3>
+        <li>
+          <a href="#!" class="text">Swift</a>
+        </li>
+        <p3 class="std-no">6,050,004 students</p3>
+      </ul>
+    </div>
+
+    <div class="col-6	col-sm-6	.col-md-3	col-lg-3	col-xl-3">
+      <h5 class="text-uppercase topic">Agriculture</h5>
+
+      <ul class="list-unstyled mb-0">
+        <li>
+          <a href="#!" class="text">Angular</a>
+        </li>
+        <p3 class="std-no">12,331,918 students</p3>
+        <li>
+          <a href="#!" class="text">Vue</a>
+        </li>
+        <p3 class="std-no">29,221,232 students</p3>
+        <li>
+          <a href="#!" class="text">React</a>
+        </li>
+        <p3 class="std-no">36,354,994 students</p3>
+        <li>
+          <a href="#!" class="text">Django</a>
+        </li>
+        <p3 class="std-no">16,354,114 students</p3>
+      </ul>
+    </div>
+    <div class="col-6	col-sm-6	.col-md-3	col-lg-3	col-xl-3">
+      <h5 class="text-uppercase topic">Electronics</h5>
+
+      <ul class="list-unstyled mb-0">
+        <li>
+          <a href="#!" class="text">Ruby</a>
+        </li>
+        <p3 class="std-no">36,354,994 students</p3>
+        <li>
+          <a href="#!" class="text">MP lab</a>
+        </li>
+        <p3 class="std-no">36,354,994 students</p3>
+        <li>
+          <a href="#!" class="text">Pandas</a>
+        </li>
+        <p3 class="std-no">36,354,994 students</p3>
+        <li>
+          <a href="#!" class="text">Numpy</a>
+        </li>
+        <p3 class="std-no">36,354,994 students</p3>
+      </ul>
+    </div>
+
+    <div class="col-6	col-sm-6	.col-md-3	col-lg-3	col-xl-3">
+      <h5 class="text-uppercase topic">Accounting</h5>
+
+      <ul class="list-unstyled mb-0">
+        <li>
+          <a href="#!" class="text">Algebra</a>
+        </li>
+        <p3 class="std-no">36,354,994 students</p3>
+        <li>
+          <a href="#!" class="text">Trignometry</a>
+        </li>
+        <p3 class="std-no">36,354,994 students</p3>
+        <li>
+          <a href="#!" class="text">Angles</a>
+        </li>
+        <p3 class="std-no">36,354,994 students</p3>
+        <li>
+          <a href="#!" class="text">Construction</a>
+        </li>
+        <p3 class="std-no">36,354,994 students</p3>
+      </ul>
+    </div>
+  </div>
+  <div class="ssc" style="padding: 8px 0px;">
+  <a class="nav-login" href="/courses.html">Explore more</a></div>
+</section>
+</div>
+</div>
+
+
+
+
+
+<div class="text-center" style="padding: 20px 0px;">
+  <a href="./dashboard/student dashboard/studdashboard.html">student dashboard</a>  |  
+<a href="./dashboard/dashboard.html">admin dashboard</a>
+</div>
+
+
+
+
+
+
+<footer class="text-center text-lg-start bg-dark text-muted">
+  <section class="" style="padding-top: 5px;">
+    <div class="container text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h3 class="text-uppercase fw-bold mb-4"  style="color: aliceblue;">
+          <span style="color: red; font-weight: 800; font-size:34px;">R</span>aising Plus
+          </h3>
+          <p style="color: aliceblue; text-align:justify">
+            Lorem ipsum dolor sit amet  Amet saepe provident tempore impedit hic, asperiores quis dolores nulla officiis commodi. Amet saepe provident tempore impedit hic, odio iure dolore mollitia dolorem deleniti in.
+           </p>
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4 vv"  style="color: rgb(0, 184, 178);">
+            Products
+          </h6>
+          <p  style="color: aliceblue;">
+            <a href="#!" class="text-reset">Courses</a>
+          </p>
+          <p  style="color: aliceblue;">
+            <a href="#!" class="text-reset">Courses</a>
+          </p>
+          <p  style="color: aliceblue;">
+            <a href="#!" class="text-reset">Courses</a>
+          </p>
+          <p  style="color: aliceblue;">
+            <a href="#!" class="text-reset">Courses</a>
+          </p>
+        </div>
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4 vv"  style="color: rgb(0, 184, 178);">
+            Useful links
+          </h6>
+          <p  style="color: aliceblue;">
+            <a href="#!" class="text-reset">Courses</a>
+          </p>
+          <p  style="color: aliceblue;">
+            <a href="#!" class="text-reset">Courses</a>
+          </p>
+          <p  style="color: aliceblue;">
+            <a href="#!" class="text-reset">Courses</a>
+          </p>
+          <p  style="color: aliceblue;">
+            <a href="#!" class="text-reset">Courses</a>
+          </p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase fw-bold mb-4 vv"  style="color: rgb(0, 184, 178);">
+            Useful links
+          </h6>
+          <p  style="color: aliceblue;">
+            <a href="#!" class="text-reset">Courses</a>
+          </p>
+          <p  style="color: aliceblue;">
+            <a href="#!" class="text-reset">Courses</a>
+          </p>
+          <p  style="color: aliceblue;">
+            <a href="#!" class="text-reset">Courses</a>
+          </p>
+          <p  style="color: aliceblue;">
+            <a href="#!" class="text-reset">Courses</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);" >
+  <p  style="color: rgb(255, 255, 255);" style="color: rgb(0, 184, 178);">© <script>document.write(new Date().getFullYear());</script> All Rights Reserved:
+    <a class="text-reset fw-bold"  href="https://mdbootstrap.com/"> 
+     <span style="color:coral;"> Navantrics</span></a></p>  
+  </div>
+</footer>
+
+<script src="./js/search.js"></script>
+<script src="./js/switch.js"></script>
+<script src="./js/script.js"></script>
+<script src="./js/cart.js"></script>
+</body>
+</html>                            

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/css.css">
+<link rel="icon" type="image/x-icon" href="/images/favicon-.png">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Raising Plus</title>
+
+</head>
+
+<style>
+
+#img-2{
+   width: 20rem;
+   height: 21rem;
+}
+#tee{
+    border-radius: 3px;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+@media (min-width: 576px) {
+    .rounded-nav {
+      border-radius: 50rem !important;
+    }
+  }
+  
+  @media (min-width: 576px) {
+    .rounded-nav .nav-link {
+      border-radius: 50rem !important;
+    }
+  }
+  
+  
+  .with-arrow .nav-link.active {
+    position: relative;
+  }
+  
+  .with-arrow .nav-link.active::after {
+    content: '';
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #2b90d9;
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+  }
+  
+  
+  .lined .nav-link {
+    border: none;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .lined .nav-link:hover {
+    border: none;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .lined .nav-link.active {
+    background: none;
+    color: #555;
+    border-color: #2b90d9;
+  }
+  
+ 
+
+  .nav-pills .nav-link {
+    color: #555;
+  }
+  .text-uppercase {
+    letter-spacing: 0.1em;
+  }
+
+
+
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="/index.html">
+          <img class="logo" src="./images/rp3.png" width="90" height="60" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/teach.html">Teach</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/courses.html">Courses</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Cartegory
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item"href="./courses/Science.html">Science & Mathematics</a>
+                <a class="dropdown-item" href="./courses/tech.html">Technology</a>
+                <a class="dropdown-item" href="./courses/accounting.html">Accounting</a>
+                <a class="dropdown-item" href="./courses/management.html">Management/Leadership</a>
+                <a class="dropdown-item" href="./courses/health.html">Health and Wellness</a>
+                <a class="dropdown-item" href="./courses/artisan.html">Artisan</a>
+                <a class="dropdown-item" href="./courses/electronics.html">Electronics</a>
+                <a class="dropdown-item" href="./courses/agric.html">Agriculture</a>
+                <a class="dropdown-item" href="./courses/engineering.html">Engineering</a>
+              </div>
+            </li>
+          </ul>
+          <div class="search">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search a course">
+            <div class="input-group-append">
+              <button class="btn btn-secondary" type="button">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+          <form class="form-inline my-2 my-lg-0">
+            <div class="user-section">
+              <ul class="nav pull-right">
+                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i id="user" class="fa fa-user-circle-o"></i><b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a id="log"  href="/login.html"><i class="fas fa-user"></i> Profile</a></li>
+                  <li><a id="log" href="/loginas.html"><i class="fa fa-sign-out"></i>Logout</a></li>
+                      </ul>
+                  </li>
+              </ul>
+            </div>
+            <div class="register" style="padding-left:10px;"><a class="nav-login" href="/loginas.html">Login
+            </a></div>
+            <div id="register1" class="register" style="padding-left:10px"><a class="nav-signup" href="/signupas.html">Sign up</a>
+            </div>
+        
+      </form>
+        </div>
+      </nav>
+
+
+
+<div class="bg-light" style="padding-top: 50px;">
+    <div class="container py-5">
+      <div class="row h-100 align-items-center py-5">
+        <div class="col-lg-6">
+         <div class="section-head "> 
+                <h2 style="text-align: center; padding: 5px 0px"><span>Come teach with us</h4>
+              </div>
+          <p style="text-align: center; padding: 5px 0px"  id="tutor">Instructors from around the world teach millions of students on Raising Plus. <br> We providethe tools and skills to teach what you love.</p>
+      <div  style="  display: flex; align-items: center; justify-content: center;">    <a href='/loginas.html'><button class="nav-login">Start teaching</button></a>
+      </div>
+        </div>
+        <div class="col-lg-6  d-lg-block"><img id="tee" src="./images/tee.png" alt="" class="img-fluid"></div>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+<div class="container">
+    <div class="section-head " style="padding-top: 80px;" > 
+  <h1 style="font-weight: 700;text-align:center;padding-bottom:60px"><span>So many reasons to start</h1>
+      </div>
+     <div class="row product">
+        
+      <div class="row">
+          <div class="col-sm-4">
+             <img class="center qq" src="https://icons.veryicon.com/png/o/education-technology/education-cloud/teach.png">
+             <h3 style="text-align: center; font-size:18px; font-weight:800;">Teach your way</h3>
+             <p style="text-align: center !important"; class="text-center">Publish the course you want, in the way you<br> want, and always have control of your own<br> content.</p>
+          </div>
+
+          <div class="col-sm-4 ">
+              <img class="center" src="https://cdn-icons-png.flaticon.com/512/5779/5779864.png">
+              <h3 style="text-align: center; font-size:18px; font-weight:800; padding-top:20px">Inspire learners</h3>
+              <p style="text-align: center !important;" class="text-center">Teach what you know and help learners explore<br> their interests, gain new skills, and advance<br> their careers.</p>
+          </div>
+
+          <div class="col-sm-4 ">
+              <img class="center" src="https://png.pngtree.com/png-vector/20191030/ourmid/pngtree-winner-cup-icon-simple-style-png-image_1911234.jpg">
+              <h3 style="text-align: center; font-size:18px; font-weight:800; padding-top:20px">Get rewarded</h3>
+              <p style="text-align: center !important;" class="text-center">Expand your professional network, build your<br> expertise, and earn money on each paid<br> enrollment.</p>
+          </div>
+        </div>
+      </div>
+  </div>
+          
+
+
+
+
+<div class="container" style="padding-top:50px">
+  <h1 style="font-weight: 700;text-align:center;padding-bottom:60px"><span>Our numbers</h1>
+    <div class="row">
+      <div class="col-6	col-sm-6 col-md-3	col-lg-3 col-xl-3">
+        <h1 class="stats">57M</h1>
+        <p class="stats-ps">Students</p>
+    </div>
+    <div class="col-6	col-sm-6	col-md-3	col-lg-3	col-xl-3">
+        <h1 class="stats">75+</h1>
+        <p class="stats-ps">Languages</p>
+  </div>
+  <div class="col-6	col-sm-6 col-md-3	col-lg-3	col-xl-3">
+    <h1 class="stats">  773M </h1>
+    <p class="stats-ps">Enrollments  </p>
+  </div>
+  <div class="col-6	col-sm-6 col-md-3	col-lg-3	col-xl-3">
+    <h1 class="stats">180+ </h1>
+    <p class="stats-ps">Countries</p>
+  </div>  </div>  </div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div  style="width: 370px;" class="modal-body">
+        <table class="show-cart table">
+          
+        </table>
+        <div>Total price: $<span class="total-cart"></span></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+       <a href="./payment.html"><button type="button" class="btn btn-primary">Pay now</button></a> 
+      </button><button class="clear-cart btn btn-danger">Clear Cart</button></div>
+      </div>
+    </div>
+  </div>  </div>
+</div> 
+  </div> 
+  
+
+
+
+
+    <div class="container">
+        <div class="section-head " style="padding-top: 80px;" > 
+          <h1 style="font-weight: 700;text-align:center;padding:20px 0px"><span>How to begin</h1>
+          </div>
+    <div class="container">
+      <div class="p-5 bg-white rounded shadow mb-5">
+        <!-- Lined tabs-->
+        <ul id="myTab2" role="tablist" class="nav nav-tabs nav-pills with-arrow lined flex-column flex-sm-row text-center">
+          <li class="nav-item flex-sm-fill">
+            <a id="home2-tab" data-toggle="tab" href="#home2" role="tab" aria-controls="home2" aria-selected="true" class="nav-link text-uppercase font-weight-bold mr-sm-3 rounded-0 active">Plan your curriculum</a>
+          </li>
+          <li class="nav-item flex-sm-fill">
+            <a id="profile2-tab" data-toggle="tab" href="#profile2" role="tab" aria-controls="profile2" aria-selected="false" class="nav-link text-uppercase font-weight-bold mr-sm-3 rounded-0"> Record a video</a>
+          </li>
+          <li class="nav-item flex-sm-fill">
+            <a id="contact2-tab" data-toggle="tab" href="#contact2" role="tab" aria-controls="contact2" aria-selected="false" class="nav-link text-uppercase font-weight-bold rounded-0">Launch your course</a>
+          </li>
+        </ul>
+        <div id="myTab2Content" class="tab-content">
+          <div id="home2" role="tabpanel" aria-labelledby="home-tab" class="tab-pane fade px-4 py-5 show active">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                 <p1> You start with your passion and knowledge. Then choose a promising topic with the help of our Marketplace Insights tool.</p1>
+                 <p1>The way that you teach — what you bring to it — is up to you.</p1>
+                 <h3 style="font-size: 18px;padding:30px 0px"> How we help you</h3>
+                <p1>We offer plenty of resources on how to create your first course. And, our instructor dashboard and curriculum pages help keep you organized. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, sapiente itaque maiores rerum alias harum fugiat molestiae nulla ipsa dolor laborum eos reprehenderit dolorum vero libero blanditiis quaerat exercitationem unde.</p1>
+                </div>
+                <div class="col-lg-6 mb-4">
+                 <img class="start-img" style="width: 380px;" src="https://media.istockphoto.com/id/1323851976/photo/classmates-are-learning-through-laptop.jpg?b=1&s=170667a&w=0&k=20&c=aVBndOkl3N8ehS6OvO3oQwfkFlNSmzmjJtMtlFLI_fA=">
+                </div>
+              </div>
+            </div>
+          <div id="profile2" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane fade px-4 py-5">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                 <p1> You start with your passion and knowledge. Then choose a promising topic with the help of our Marketplace Insights tool.</p1>
+                 <p1>The way that you teach — what you bring to it — is up to you.</p1>
+                 <h3 style="font-size: 18px;padding:30px 0px"> How we help you</h3>
+                <p1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, qui nulla possimus atque voluptatem tempora et labore corrupti id dolorum obcaecati, odit eaque reprehenderit? Asperiores iste eos facilis ducimus aspernatur! We offer plenty of resources on how to create your first course. And, our instructor dashboard and curriculum pages help keep you organized.</p1>
+                </div>
+                <div class="col-lg-6 mb-4">
+                 <img class="start-img" style="width: 360px;" src="https://media.istockphoto.com/id/1323851976/photo/classmates-are-learning-through-laptop.jpg?b=1&s=170667a&w=0&k=20&c=aVBndOkl3N8ehS6OvO3oQwfkFlNSmzmjJtMtlFLI_fA=">
+                </div>
+              </div>  
+            </div>
+          <div id="contact2" role="tabpanel" aria-labelledby="contact-tab" class="tab-pane fade px-4 py-5">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                 <p1> You start with your passion and knowledge. Then choose a promising topic with the help of our Marketplace Insights tool.</p1>
+                 <p1>The way that you teach — what you bring to it — is up to you.</p1>
+                 <h3 style="font-size: 18px;padding:30px 0px"> How we help you</h3>
+                <p1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus autem ex odio explicabo iste ducimus est molestias, ipsum libero ab eum dolor laudantium, expedita dolorum totam doloremque! Numquam, quaerat fuga. We offer plenty of resources on how to create your first course. And, our instructor dashboard and curriculum pages help keep you organized.</p1>
+                </div>
+                <div class="col-lg-6 mb-4">
+                 <img class="start-img" style="width: 360px;" src="https://media.istockphoto.com/id/1323851976/photo/classmates-are-learning-through-laptop.jpg?b=1&s=170667a&w=0&k=20&c=aVBndOkl3N8ehS6OvO3oQwfkFlNSmzmjJtMtlFLI_fA=">
+                </div>
+              </div> 
+            </div>
+        </div>
+    </div> 
+</div>
+</div>
+
+
+
+
+
+
+<div class="container" style="padding:50px">
+    <div class="row">
+      <div class="col-sm-4">
+        <img id="img-2" src="https://s.udemycdn.com/teaching/support-2-v3.jpg">
+      </div>
+      <div class="col-sm-4">
+        <h3 class="aa" id="centers" style="padding-top: 60px;font-weight:800;font-size: 22px">You won’t have to do it alone</h3>
+        <p id="center" style="font-size: 18px;">Our<small style="font-weight: 700;"> Instructor Support Team</small> is here to answer your questions and review your test video, 
+            while our <small style="font-weight: 700;">Teaching Center</small>  gives you plenty of resources to help you through the process. 
+            Plus, get the support of experienced instructors in our online community.</p>
+    </div>
+      <div class="col-sm-4">
+        <img id="img-2" src="https://s.udemycdn.com/teaching/support-2-v3.jpg">
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div style="padding-top:50px ;">
+<div style="background-color:#f6f6f6;">
+<div class="container" style="padding: 40px 0px;">
+<div> 
+    <h1 style="font-weight: 700;text-align:center;padding:20px 0px"><span>Become an instructor today</h1>
+  </div>
+<p style="text-align: center;"  id="tutor">Instructors from around the world teach millions of students on Raising Plus. We provide the tools and skills to teach what you love.</p>
+<div  style="  display: flex; align-items: center; justify-content: center;">    <a href='/loginas.html'><button class="nav-login">Start teaching</button></a>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+    
+
+
+<footer class="text-center text-lg-start bg-dark text-muted">
+  <section class="" style="padding-top: 5px;">
+    <div class="container text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h3 class="text-uppercase fw-bold mb-4"  style="color: aliceblue;">
+          <span style="color: red; font-weight: 800; font-size:34px;">R</span>aising Plus
+          </h3>
+          <p style="color: aliceblue; text-align:justify">
+            Lorem ipsum dolor sit amet  Amet saepe provident tempore impedit hic, asperiores quis dolores nulla officiis commodi. Amet saepe provident tempore impedit hic, odio iure dolore mollitia dolorem deleniti in.
+           </p>
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4 vv"  style="color: rgb(0, 184, 178);">
+            Products
+          </h6>
+          <p  style="color: aliceblue;">
+            <a href="#!" class="text-reset">Courses</a>
+          </p>
+          <p  style="color: aliceblue;">
+            <a href="#!" class="text-reset">Courses</a>
+          </p>
+          <p  style="color: aliceblue;">
+            <a href="#!" class="text-reset">Courses</a>
+          </p>
+          <p  style="color: aliceblue;">
+            <a href="#!" class="text-reset">Courses</a>
+          </p>
+        </div>
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4 vv"  style="color: rgb(0, 184, 178);">
+            Useful links
+          </h6>
+          <p  style="color: aliceblue;">
+            <a href="#!" class="text-reset">Courses</a>
+          </p>
+          <p  style="color: aliceblue;">
+            <a href="#!" class="text-reset">Courses</a>
+          </p>
+          <p  style="color: aliceblue;">
+            <a href="#!" class="text-reset">Courses</a>
+          </p>
+          <p  style="color: aliceblue;">
+            <a href="#!" class="text-reset">Courses</a>
+          </p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase fw-bold mb-4 vv"  style="color: rgb(0, 184, 178);">
+            Useful links
+          </h6>
+          <p  style="color: aliceblue;">
+            <a href="#!" class="text-reset">Courses</a>
+          </p>
+          <p  style="color: aliceblue;">
+            <a href="#!" class="text-reset">Courses</a>
+          </p>
+          <p  style="color: aliceblue;">
+            <a href="#!" class="text-reset">Courses</a>
+          </p>
+          <p  style="color: aliceblue;">
+            <a href="#!" class="text-reset">Courses</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);" >
+  <p  style="color: rgb(255, 255, 255);" style="color: rgb(0, 184, 178);">© <script>document.write(new Date().getFullYear());</script> All Rights Reserved:
+    <a class="text-reset fw-bold"  href="https://mdbootstrap.com/"> 
+     <span style="color:coral;"> Navantrics</span></a></p>  
+  </div>
+</footer>
+  <script src="./js/pageTopScroller.js"></script>
+  <script src="../js/script.js"></script>
+  </body>
+  </html>                            

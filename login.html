@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/css.css">
+<link rel="icon" type="image/x-icon" href="/images/favicon-.png">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Raising Plus</title>
+
+<style>
+    ::selection{
+        background: #ff80bf;
+      
+      }
+      .cc{
+        background: #fff;
+        max-width: 350px;
+        width: 100%;
+        padding: 25px 30px;
+        border-radius: 5px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+      }
+      .container form .title{
+        font-size: 30px;
+        font-weight: 600;
+        margin: 20px 0 10px 0;
+        position: relative;
+      }
+      .container form .title:before{
+        content: '';
+        position: absolute;
+        height: 4px;
+        width: 33px;
+        left: 0px;
+        bottom: 3px;
+        border-radius: 5px;
+      }
+      .container form .input-box{
+        width: 100%;
+        height: 45px;
+        margin-top: 25px;
+        position: relative;
+      }
+      .container form .input-box input{
+        width: 100%;
+        height: 100%;
+        outline: none;
+        font-size: 16px;
+        border: none;
+      }
+      .container form .underline::before{
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background: #ccc;
+        left: 0;
+        bottom: 0;
+      }
+      .container form .underline::after{
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background: linear-gradient(to right, #FF0505 0%, #C90567 100%);
+        left: 0;
+        bottom: 0;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: all 0.3s ease;
+      }
+      .container form .input-box input:focus ~ .underline::after,
+      .container form .input-box input:valid ~ .underline::after{
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+      .container form .button{
+        margin: 40px 0 20px 0;
+      }
+      .container .input-box input[type="submit"]{
+        background-color:crimson;
+        font-size: 17px;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      .container .input-box input[type="submit"]:hover{
+        letter-spacing: 1px;
+        background: linear-gradient(to left, #99004d 0%, #ff0080 100%);
+      }
+      .container .option{
+        font-size: 14px;
+        text-align: center;
+      }
+      .container .facebook a,
+      .container .twitter a{
+        display: block;
+        height: 45px;
+        width: 100%;
+        font-size: 15px;
+        text-decoration: none;
+        padding-left: 20px;
+        line-height: 45px;
+        color: #fff;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+      }
+      
+      .container .facebook i,
+      .container .twitter i{
+        padding-right: 12px;
+        font-size: 20px;
+      }
+      .container .twitter a{
+        background: linear-gradient(to right,  #00acee 0%, #1abeff 100%);
+        margin: 20px 0 15px 0;
+      }
+      .container .twitter a:hover{
+        background: linear-gradient(to left,  #00acee 0%, #1abeff 100%);
+        margin: 20px 0 15px 0;
+      }
+      .container .facebook a{
+        background: linear-gradient( to right,  #3b5998 0%, #476bb8 100%);
+        margin: 20px 0 50px 0;
+      }
+      .container .facebook a:hover{
+        background: linear-gradient( to left,  #3b5998 0%, #476bb8 100%);
+        margin: 20px 0 50px 0;
+      }
+      
+      .inputs input {
+        width: 40px;
+        height: 40px
+    }
+    
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin: 0
+    }
+    
+
+</style>
+</head> 
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <a class="navbar-brand" href="/index.html">
+      <img class="logo" src="./images/rp3.png" width="90" height="60" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/teach.html">Teach</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/courses.html">Courses</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Cartegory
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item"href="../courses/Science.html">Science & Mathematics</a>
+            <a class="dropdown-item" href="../courses/tech.html">Technology</a>
+            <a class="dropdown-item" href="../courses/accounting.html">Accounting</a>
+            <a class="dropdown-item" href="../courses/management.html">Management/Leadership</a>
+            <a class="dropdown-item" href="../courses/health.html">Health and Wellness</a>
+            <a class="dropdown-item" href="../courses/artisan.html">Artisan</a>
+            <a class="dropdown-item" href="../courses/electronics.html">Electronics</a>
+            <a class="dropdown-item" href="../courses/agric.html">Agriculture</a>
+            <a class="dropdown-item" href="../courses/engineering.html">Engineering</a>
+          </div>
+        </li>
+      </ul>
+      <div class="search">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search a course">
+        <div class="input-group-append">
+          <button class="btn btn-secondary" type="button">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+      <form class="form-inline my-2 my-lg-0">
+        <div class="register" style="padding-left:10px;"><a class="nav-login" href="/loginas.html">Login
+        </a></div>
+        <div id="register1" class="register" style="padding-left:10px"><a class="nav-signup" href="/signupas.html">Sign up</a>
+        </div>
+      <div class="user-section">
+          <ul class="nav pull-right">
+              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i id="user" class="fa fa-user-circle-o"></i><b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a id="log"  href="/login.html"><i class="fas fa-user"></i> Profile</a></li>
+                  <li><a id="log" href="/loginas.html"><i class="fa fa-sign-out"></i>Logout</a></li>
+                  </ul>
+              </li>
+          </ul>
+        </div>
+        <button type="button" class="icon-button" data-toggle="modal" data-target="#cart">
+          <span class="fa fa-shopping-cart" style="font-size: 33px;"></span>
+          <span class="icon-button__badge"><span class="total-count"></span></span>
+        </button>
+  </form>
+    </div>
+  </nav>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div  style="width: 370px;" class="modal-body">
+        <table class="show-cart table">
+          
+        </table>
+        <div>Total price: $<span class="total-cart"></span></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+       <a href="./payment.html"><button type="button" class="btn btn-primary">Pay now</button></a> 
+      </button><button class="clear-cart btn btn-danger">Clear Cart</button></div>
+      </div>
+    </div>
+  </div>  </div>
+</div> 
+  </div> 
+
+
+
+
+  <div  style="padding-top: 120px; padding-bottom: 30px">
+    <h3 style="text-align: center;padding:10px"><span>Login page</h3>
+ <div class="container cc">
+      <form action="#">
+        <div class="input-box underline">
+          <input type="text" placeholder="Enter Your Email" required>
+          <div class="underline"></div>
+        </div>
+        <div class="input-box">
+          <input type="password" placeholder="Enter Your Password" required>
+          <div class="underline"></div>
+        </div>          
+            <div class="position-relative" style="padding-top: 8px;" >
+                    <div id="otp" class="inputs d-flex flex-row justify-content-center mt-2"> <input class="m-2 text-center form-control rounded" type="text" id="first" maxlength="1" /> <input class="m-2 text-center form-control rounded" type="text" id="second" maxlength="1" /> <input class="m-2 text-center form-control rounded" type="text" id="third" maxlength="1" />  <input class="m-2 text-center form-control rounded" type="text" id="sixth" maxlength="1" /> </div>
+                </div>
+        <div class="input-box button">
+          <input type="submit" name="" value="Login">
+       <div style="padding: 10px;"><a style="text-decoration: none; font-weight: 600" href="./reset.html">Forget password</a></div>
+        </div>
+      </form>
+
+        <div class="option" style="padding-top: 10px;">or Connect With Social Media</div>
+        <div class="twitter">
+          <a href="https://twitter.com/login"><i class="fab fa-twitter"></i>Sign in With Twitter</a>
+        </div>
+        <div class="facebook">
+          <a href="https://web.facebook.com/?_rdc=1&_rdr"><i class="fab fa-facebook-f"></i>Sign in With Facebook</a>
+        </div>
+    </div></div>
+
+
+ 
+  
+
+
+    <footer class="text-center text-lg-start bg-dark text-muted">
+      <section class="" style="padding-top: 5px;">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h3 class="text-uppercase fw-bold mb-4"  style="color: aliceblue;">
+              <span style="color: red; font-weight: 800; font-size:34px;">R</span>aising Plus
+              </h3>
+              <p style="color: aliceblue; text-align:justify">
+                Lorem ipsum dolor sit amet  Amet saepe provident tempore impedit hic, asperiores quis dolores nulla officiis commodi. Amet saepe provident tempore impedit hic, odio iure dolore mollitia dolorem deleniti in.
+               </p>
+            </div>
+    
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4 vv"  style="color: rgb(0, 184, 178);">
+                Products
+              </h6>
+              <p  style="color: aliceblue;">
+                <a href="#!" class="text-reset">Courses</a>
+              </p>
+              <p  style="color: aliceblue;">
+                <a href="#!" class="text-reset">Courses</a>
+              </p>
+              <p  style="color: aliceblue;">
+                <a href="#!" class="text-reset">Courses</a>
+              </p>
+              <p  style="color: aliceblue;">
+                <a href="#!" class="text-reset">Courses</a>
+              </p>
+            </div>
+    
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4 vv"  style="color: rgb(0, 184, 178);">
+                Useful links
+              </h6>
+              <p  style="color: aliceblue;">
+                <a href="#!" class="text-reset">Courses</a>
+              </p>
+              <p  style="color: aliceblue;">
+                <a href="#!" class="text-reset">Courses</a>
+              </p>
+              <p  style="color: aliceblue;">
+                <a href="#!" class="text-reset">Courses</a>
+              </p>
+              <p  style="color: aliceblue;">
+                <a href="#!" class="text-reset">Courses</a>
+              </p>
+            </div>
+    
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4 vv"  style="color: rgb(0, 184, 178);">
+                Useful links
+              </h6>
+              <p  style="color: aliceblue;">
+                <a href="#!" class="text-reset">Courses</a>
+              </p>
+              <p  style="color: aliceblue;">
+                <a href="#!" class="text-reset">Courses</a>
+              </p>
+              <p  style="color: aliceblue;">
+                <a href="#!" class="text-reset">Courses</a>
+              </p>
+              <p  style="color: aliceblue;">
+                <a href="#!" class="text-reset">Courses</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);" >
+      <p  style="color: rgb(255, 255, 255);" style="color: rgb(0, 184, 178);">© <script>document.write(new Date().getFullYear());</script> All Rights Reserved:
+        <a class="text-reset fw-bold"  href="https://mdbootstrap.com/"> 
+         <span style="color:coral;"> Navantrics</span></a></p>  
+      </div>
+    </footer>
+<script>document.addEventListener("DOMContentLoaded", function(event) {
+
+    function OTPInput() {
+    const inputs = document.querySelectorAll('#otp > *[id]');
+    for (let i = 0; i < inputs.length; i++) { inputs[i].addEventListener('keydown', function(event) { if (event.key==="Backspace" ) { inputs[i].value='' ; if (i !==0) inputs[i - 1].focus(); } else { if (i===inputs.length - 1 && inputs[i].value !=='' ) { return true; } else if (event.keyCode> 47 && event.keyCode < 58) { inputs[i].value=event.key; if (i !==inputs.length - 1) inputs[i + 1].focus(); event.preventDefault(); } else if (event.keyCode> 64 && event.keyCode < 91) { inputs[i].value=String.fromCharCode(event.keyCode); if (i !==inputs.length - 1) inputs[i + 1].focus(); event.preventDefault(); } } }); } } OTPInput(); });</script>
+<script src="/js/script.js"></script>
+<script src="/js/cart.js"></script>
+</body>
+</html>                            

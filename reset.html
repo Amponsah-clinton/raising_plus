@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/css.css">
+<link rel="icon" type="image/x-icon" href="/images/favicon-.png">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Raising Plus</title>
+
+<style>
+    .card {
+        margin-bottom: 1.5rem;
+        box-shadow: 0 1px 15px 1px rgba(52,40,104,.08);
+    }
+    .card {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid #e5e9f2;
+        border-radius: .2rem;
+    }
+</style>
+</head> 
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <a class="navbar-brand" href="/index.html">
+      <img class="logo" src="./images/rp3.png" width="90" height="60" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/teach.html">Teach</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/courses.html">Courses</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Cartegory
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item"href="../courses/Science.html">Science & Mathematics</a>
+            <a class="dropdown-item" href="../courses/tech.html">Technology</a>
+            <a class="dropdown-item" href="../courses/accounting.html">Accounting</a>
+            <a class="dropdown-item" href="../courses/management.html">Management/Leadership</a>
+            <a class="dropdown-item" href="../courses/health.html">Health and Wellness</a>
+            <a class="dropdown-item" href="../courses/artisan.html">Artisan</a>
+            <a class="dropdown-item" href="../courses/electronics.html">Electronics</a>
+            <a class="dropdown-item" href="../courses/agric.html">Agriculture</a>
+            <a class="dropdown-item" href="../courses/engineering.html">Engineering</a>
+          </div>
+        </li>
+      </ul>
+      <div class="search">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search a course">
+        <div class="input-group-append">
+          <button class="btn btn-secondary" type="button">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+      <form class="form-inline my-2 my-lg-0">
+        <div class="register" style="padding-left:10px;"><a class="nav-login" href="/loginas.html">Login
+        </a></div>
+        <div id="register1" class="register" style="padding-left:10px"><a class="nav-signup" href="/signupas.html">Sign up</a>
+        </div>
+      <div class="user-section">
+          <ul class="nav pull-right">
+              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i id="user" class="fa fa-user-circle-o"></i><b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a id="log"  href="/login.html"><i class="fas fa-user"></i> Profile</a></li>
+                  <li><a id="log" href="/loginas.html"><i class="fa fa-sign-out"></i>Logout</a></li>
+                  </ul>
+              </li>
+          </ul>
+        </div>
+        <button type="button" class="icon-button" data-toggle="modal" data-target="#cart">
+          <span class="fa fa-shopping-cart" style="font-size: 33px;"></span>
+          <span class="icon-button__badge"><span class="total-count"></span></span>
+        </button>
+  </form>
+    </div>
+  </nav>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div  style="width: 370px;" class="modal-body">
+        <table class="show-cart table">
+          
+        </table>
+        <div>Total price: $<span class="total-cart"></span></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+       <a href="./payment.html"><button type="button" class="btn btn-primary">Pay now</button></a> 
+      </button><button class="clear-cart btn btn-danger">Clear Cart</button></div>
+      </div>
+    </div>
+  </div>  </div>
+</div> 
+  </div> 
+
+
+
+
+
+  
+  <div  id="resets" class="container" style="padding-top: 150px;padding-bottom:70px">
+    <div class="text-center mt-4">
+      <h1 class="h2">Reset password</h1>
+      <p class="lead">
+          Enter your email to reset your password.
+      </p>
+  </div>
+  
+          <div class="card">
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input class="form-control form-control-lg" type="email" name="email" placeholder="Enter your email"  required >
+                </div>
+                <div class="text-center mt-3">
+                    <a href="index.html" class="btn btn-lg btn-dark">Reset password</a>
+                </div>
+            </form>
+            </div>
+          </div> </div>
+        
+
+
+
+
+
+
+
+  
+  
+
+
+          <footer class="text-center text-lg-start bg-dark text-muted">
+            <section class="" style="padding-top: 5px;">
+              <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h3 class="text-uppercase fw-bold mb-4"  style="color: aliceblue;">
+                    <span style="color: red; font-weight: 800; font-size:34px;">R</span>aising Plus
+                    </h3>
+                    <p style="color: aliceblue; text-align:justify">
+                      Lorem ipsum dolor sit amet  Amet saepe provident tempore impedit hic, asperiores quis dolores nulla officiis commodi. Amet saepe provident tempore impedit hic, odio iure dolore mollitia dolorem deleniti in.
+                     </p>
+                  </div>
+          
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4 vv"  style="color: rgb(0, 184, 178);">
+                      Products
+                    </h6>
+                    <p  style="color: aliceblue;">
+                      <a href="#!" class="text-reset">Courses</a>
+                    </p>
+                    <p  style="color: aliceblue;">
+                      <a href="#!" class="text-reset">Courses</a>
+                    </p>
+                    <p  style="color: aliceblue;">
+                      <a href="#!" class="text-reset">Courses</a>
+                    </p>
+                    <p  style="color: aliceblue;">
+                      <a href="#!" class="text-reset">Courses</a>
+                    </p>
+                  </div>
+          
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4 vv"  style="color: rgb(0, 184, 178);">
+                      Useful links
+                    </h6>
+                    <p  style="color: aliceblue;">
+                      <a href="#!" class="text-reset">Courses</a>
+                    </p>
+                    <p  style="color: aliceblue;">
+                      <a href="#!" class="text-reset">Courses</a>
+                    </p>
+                    <p  style="color: aliceblue;">
+                      <a href="#!" class="text-reset">Courses</a>
+                    </p>
+                    <p  style="color: aliceblue;">
+                      <a href="#!" class="text-reset">Courses</a>
+                    </p>
+                  </div>
+          
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4 vv"  style="color: rgb(0, 184, 178);">
+                      Useful links
+                    </h6>
+                    <p  style="color: aliceblue;">
+                      <a href="#!" class="text-reset">Courses</a>
+                    </p>
+                    <p  style="color: aliceblue;">
+                      <a href="#!" class="text-reset">Courses</a>
+                    </p>
+                    <p  style="color: aliceblue;">
+                      <a href="#!" class="text-reset">Courses</a>
+                    </p>
+                    <p  style="color: aliceblue;">
+                      <a href="#!" class="text-reset">Courses</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);" >
+            <p  style="color: rgb(255, 255, 255);" style="color: rgb(0, 184, 178);">© <script>document.write(new Date().getFullYear());</script> All Rights Reserved:
+              <a class="text-reset fw-bold"  href="https://mdbootstrap.com/"> 
+               <span style="color:coral;"> Navantrics</span></a></p>  
+            </div>
+          </footer>
+
+<script src="./js/script.js"></script>
+<script src="./js/cart.js"></script>
+</body>
+</html>                            
